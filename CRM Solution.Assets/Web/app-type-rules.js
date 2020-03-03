@@ -1,8 +1,9 @@
-﻿function crmAlert(Context) {
+﻿function crmAlert(context) {
 
-    let myUniqueId = "_myUniqueId"; // Define an ID for the notification
-    let currentUserName = Xrm.Utility.getGlobalContext().userSettings.userName; // get current user name
-    let message = currentUserName + ": Your JavaScript code in action!";
+    let formContext = context.getFormContext();
+    let applicationType = formContext.getAttribute("ss_applicationtype").getValue()
+
+    let message = applicationType;
 
     alert(message);
 
