@@ -350,7 +350,7 @@
               "GulpOutputFile": "app-type-rules.js",
               "ForceExecutionOfGulpTaskOnBulkUpdate": false,
               "MinifyMode": 1,
-              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\app-type-rules.js",
+              "RelativeFilePath": "Web\\IntellisenseFiles\\app-type-rules.js",
               "Name": "app-type-rules.js",
               "CrmId": "2b59dc87-fa5c-ea11-a811-000d3a35b480"
             },
