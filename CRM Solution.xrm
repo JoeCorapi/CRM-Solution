@@ -355,6 +355,16 @@
               "CrmId": "2b59dc87-fa5c-ea11-a811-000d3a35b480"
             },
             {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptFile, SS.XrmToolkit.Common",
+              "GulpTaskName": "",
+              "GulpOutputFile": "app-type-rules.js",
+              "ForceExecutionOfGulpTaskOnBulkUpdate": false,
+              "MinifyMode": 1,
+              "RelativeFilePath": "Web\\app-type-rules.js",
+              "Name": "app-type-rules.js",
+              "CrmId": "2b59dc87-fa5c-ea11-a811-000d3a35b480"
+            },
+            {
               "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
               "RelativeFilePath": "Views\\Bundle Lookup View.savedquery",
               "Name": "Bundle Lookup View.savedquery",
