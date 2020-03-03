@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="Web\app-type-rules.js" />
     <Content Include="Web\IntellisenseFiles\App to order Classic Form - Information.js" />
     <Content Include="Web\IntellisenseFiles\Application Form - Information.js" />
     <Content Include="Web\IntellisenseFiles\Application Tab Template Form - Information.js" />
@@ -74,7 +75,6 @@
     <Content Include="Web\IntellisenseFiles\Contact Form - TimelineWallControl - Contact - Main.js" />
     <Content Include="Web\IntellisenseFiles\Contact Price List Form - Information.js" />
     <Content Include="Web\IntellisenseFiles\Custom Address Form - Information.js" />
-    <Content Include="Web\IntellisenseFiles\enums\app-type-rules.js" />
     <Content Include="Web\IntellisenseFiles\Order Close Form - Information.js" />
     <Content Include="Web\IntellisenseFiles\Order Form - Information.js" />
     <Content Include="Web\IntellisenseFiles\Order Form - Order.js" />
