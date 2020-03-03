@@ -1,0 +1,3 @@
+﻿function crmAlert(){
+    alert("Hello");
+}

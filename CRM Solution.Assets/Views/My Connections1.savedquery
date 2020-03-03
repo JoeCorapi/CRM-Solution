@@ -1,0 +1,37 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+      <entity name="salesorder">
+        <order attribute="name" descending="false" />
+        <attribute name="name" />
+        <attribute name="totalamount" />
+        <attribute name="statuscode" />
+        <filter type="and">
+          <condition attribute="statecode" operator="eq" value="0" />
+        </filter>
+        <attribute name="customerid" />
+        <link-entity alias="salesordercustomeridcontactcontactid" name="contact" from="contactid" to="customerid" link-type="outer" visible="false">
+          <attribute name="emailaddress1" />
+        </link-entity>
+        <link-entity name="connection" from="record2id" to="salesorderid" alias="MyConnections">
+          <filter type="and">
+            <condition attribute="record1id" operator="eq-userid" />
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </link-entity>
+        <attribute name="salesorderid" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" object="1088" jump="name" select="1" icon="1" preview="1">
+      <row name="result" id="salesorderid">
+        <cell name="name" width="300" />
+        <cell name="statuscode" width="100" />
+        <cell name="totalamount" width="100" />
+        <cell name="customerid" width="150" />
+        <cell name="salesordercustomeridcontactcontactid.emailaddress1" width="150" disableSorting="1" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

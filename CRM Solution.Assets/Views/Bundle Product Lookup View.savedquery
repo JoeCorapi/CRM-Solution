@@ -1,0 +1,28 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" mapping="logical">
+      <entity name="product">
+        <attribute name="name" />
+        <attribute name="price" />
+        <attribute name="defaultuomid" />
+        <attribute name="productnumber" />
+        <attribute name="productid" />
+        <attribute name="iskit" />
+        <filter type="and">
+          <condition attribute="statecode" operator="ne" value="1" />
+          <condition attribute="productstructure" operator="eq" value="1" />
+          <condition attribute="iskit" operator="eq" value="0" />
+        </filter>
+        <order attribute="name" descending="false" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" object="1024" jump="name" select="1" preview="0" icon="1">
+      <row name="result" id="productid">
+        <cell name="name" width="200" />
+        <cell name="productnumber" width="100" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

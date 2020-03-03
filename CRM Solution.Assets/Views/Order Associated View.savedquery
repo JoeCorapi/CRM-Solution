@@ -1,0 +1,22 @@
+﻿<view>
+  <fetchxml>
+    <fetch distinct="false" mapping="logical">
+      <entity name="salesorder">
+        <attribute name="name" />
+        <attribute name="statecode" />
+        <attribute name="totalamount" />
+        <order attribute="name" descending="false" />
+        <attribute name="salesorderid" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="salesorders" jump="name" select="1" icon="1" preview="1" object="1088">
+      <row name="salesorder" id="salesorderid">
+        <cell name="name" width="300" />
+        <cell name="statecode" width="100" />
+        <cell name="totalamount" width="100" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

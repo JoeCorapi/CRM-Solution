@@ -1,0 +1,27 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" output-format="xml-platform" mapping="logical">
+      <entity name="salesorder">
+        <attribute name="name" />
+        <order attribute="name" descending="false" />
+        <attribute name="totalamount" />
+        <attribute name="statuscode" />
+        <attribute name="customerid" />
+        <filter type="or" isquickfindfields="1">
+          <condition attribute="name" operator="like" value="{0}" />
+        </filter>
+        <attribute name="salesorderid" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" jump="name" select="1" icon="1" preview="1" object="1088">
+      <row name="result" id="salesorderid">
+        <cell name="name" width="300" />
+        <cell name="customerid" width="150" />
+        <cell name="statuscode" width="100" />
+        <cell name="totalamount" width="100" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

@@ -1,0 +1,27 @@
+﻿<view>
+  <fetchxml>
+    <fetch distinct="false" mapping="logical">
+      <entity name="product">
+        <attribute name="name" />
+        <attribute name="productnumber" />
+        <attribute name="subjectid" />
+        <attribute name="statecode" />
+        <attribute name="productid" />
+        <filter type="and">
+          <condition attribute="productstructure" operator="eq" value="3" />
+        </filter>
+        <order attribute="productnumber" descending="false" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="products" object="1024" jump="name" select="1" icon="1" preview="1">
+      <row name="product" id="productid">
+        <cell name="name" width="300" />
+        <cell name="productnumber" width="100" />
+        <cell name="subjectid" width="100" />
+        <cell name="statecode" width="100" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

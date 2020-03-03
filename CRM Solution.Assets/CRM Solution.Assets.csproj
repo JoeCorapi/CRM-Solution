@@ -1,0 +1,347 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A70EECF0-0575-4C5D-9CD4-469B166F4B5B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRM_Solution.Assets</RootNamespace>
+    <AssemblyName>CRM Solution.Assets</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TypeScriptToolsVersion>3.7</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="Web\IntellisenseFiles\App to order Classic Form - Information.js" />
+    <Content Include="Web\IntellisenseFiles\Application Form - Information.js" />
+    <Content Include="Web\IntellisenseFiles\Application Tab Template Form - Information.js" />
+    <Content Include="Web\IntellisenseFiles\Application Type Form - Information.js" />
+    <Content Include="Web\IntellisenseFiles\Connector Form - Information.js" />
+    <Content Include="Web\IntellisenseFiles\Contact Form - AI for Sales.js" />
+    <Content Include="Web\IntellisenseFiles\Contact Form - Contact - Mobile.js" />
+    <Content Include="Web\IntellisenseFiles\Contact Form - Contact for Interactive experience.js" />
+    <Content Include="Web\IntellisenseFiles\Contact Form - Contact.js" />
+    <Content Include="Web\IntellisenseFiles\Contact Form - Information.js" />
+    <Content Include="Web\IntellisenseFiles\Contact Form - TimelineWallControl - Contact - Main.js" />
+    <Content Include="Web\IntellisenseFiles\Contact Price List Form - Information.js" />
+    <Content Include="Web\IntellisenseFiles\Custom Address Form - Information.js" />
+    <Content Include="Web\IntellisenseFiles\enums\app-type-rules.js" />
+    <Content Include="Web\IntellisenseFiles\Order Close Form - Information.js" />
+    <Content Include="Web\IntellisenseFiles\Order Form - Information.js" />
+    <Content Include="Web\IntellisenseFiles\Order Form - Order.js" />
+    <Content Include="Web\IntellisenseFiles\Order Line Form - Field Service Information.js" />
+    <Content Include="Web\IntellisenseFiles\Order Line Form - Information.js" />
+    <Content Include="Web\IntellisenseFiles\Order Line Form - Project Information.js" />
+    <Content Include="Web\IntellisenseFiles\Product Form - Information.js" />
+    <Content Include="Web\IntellisenseFiles\Product Form - Product.js" />
+    <Content Include="Web\IntellisenseFiles\Product Form - Project Information.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Active Applications.savedquery" />
+    <Content Include="Views\Active Contacts.savedquery" />
+    <Content Include="Views\Active Contacts Subgrid View.savedquery" />
+    <Content Include="Views\Active Cusotm Addresses.savedquery" />
+    <Content Include="Views\Active Members.savedquery" />
+    <Content Include="Views\Active Orders.savedquery" />
+    <Content Include="Views\Active Product Bundles.savedquery" />
+    <Content Include="Views\Active Products %28Field Service Product Type is Inventory or Non Inventory%29.savedquery" />
+    <Content Include="Views\Active Products %28Field Service Product Type is Inventory%29.savedquery" />
+    <Content Include="Views\Active Products %28Field Service Product Type is not a Service%29.savedquery" />
+    <Content Include="Views\Active Products %28Field Service%29.savedquery" />
+    <Content Include="Views\Active Products Lookup View.savedquery" />
+    <Content Include="Views\Active Products, Families &amp; Bundles.savedquery" />
+    <Content Include="Views\Active Project Contracts.savedquery" />
+    <Content Include="Views\Active Services %28Field Service Product Type is a Service%29.savedquery" />
+    <Content Include="Views\Active Services %28Field Service Product Type is Service%29.savedquery" />
+    <Content Include="Views\All Contacts.savedquery" />
+    <Content Include="Views\All Contacts %28not available%29.savedquery" />
+    <Content Include="Views\All Contacts Not at Company.savedquery" />
+    <Content Include="Views\All Members.savedquery" />
+    <Content Include="Views\All Orders.savedquery" />
+    <Content Include="Views\All Product Bundles.savedquery" />
+    <Content Include="Views\All Products %28Field Service%29.savedquery" />
+    <Content Include="Views\All Products, Families &amp; Bundles.savedquery" />
+    <Content Include="Views\All Project Contracts.savedquery" />
+    <Content Include="Views\All Service-Maintenance Based Orders.savedquery" />
+    <Content Include="Views\Application Advanced Find View.savedquery" />
+    <Content Include="Views\Application Associated View.savedquery" />
+    <Content Include="Views\Application Lookup View.savedquery" />
+    <Content Include="Processes\Application_to_Order.workflow" />
+    <Content Include="Views\Bundle Lookup View.savedquery" />
+    <Content Include="Views\Bundle Product Lookup View.savedquery" />
+    <Content Include="Processes\Calculate Volume.customaction" />
+    <Content Include="Processes\Close Application Status.customaction" />
+    <Content Include="Views\Contact Associated View.savedquery" />
+    <Content Include="Views\Contact De-Dup lookup display.savedquery" />
+    <Content Include="Views\Contact List Members View.savedquery" />
+    <Content Include="Views\Contact multi-line lookup display.savedquery" />
+    <Content Include="Views\Contacts Advanced Find View.savedquery" />
+    <Content Include="Views\Contacts Being Followed.savedquery" />
+    <Content Include="Views\Contacts BulkOperation View.savedquery" />
+    <Content Include="Views\Contacts I Follow.savedquery" />
+    <Content Include="Views\Contacts Lookup View.savedquery" />
+    <Content Include="Views\Contacts Mobile Client Draft View.savedquery" />
+    <Content Include="Views\Contacts  Influenced Deals That We Won.savedquery" />
+    <Content Include="Views\Contacts  No Campaign Activities in Last 3 Months.savedquery" />
+    <Content Include="Views\Contacts  No Orders in Last 6 Months.savedquery" />
+    <Content Include="Views\Contacts  Responded to Campaigns in Last 6 Months.savedquery" />
+    <Content Include="Views\ContactsOver65.savedquery" />
+    <Content Include="Views\Cusotm Address Advanced Find View.savedquery" />
+    <Content Include="Views\Cusotm Address Associated View.savedquery" />
+    <Content Include="Views\Cusotm Address Lookup View.savedquery" />
+    <Content Include="Views\Custom Address Quick View.savedquery" />
+    <Content Include="Views\Draft Product Bundles.savedquery" />
+    <Content Include="Views\Draft Products, Families &amp; Bundles.savedquery" />
+    <Content Include="Views\Entitlement Contacts.savedquery" />
+    <Content Include="Views\Entitlement Products.savedquery" />
+    <Content Include="Views\Excluded Contacts Campaigns.savedquery" />
+    <Content Include="Views\Export Field Translations.savedquery" />
+    <Content Include="Views\Full View.savedquery" />
+    <Content Include="Views\Inactive Applications.savedquery" />
+    <Content Include="Views\Inactive Contacts.savedquery" />
+    <Content Include="Views\Inactive Cusotm Addresses.savedquery" />
+    <Content Include="Views\Inactive Members.savedquery" />
+    <Content Include="Views\Inactive Services %28Field Service Product Type is Inventory or Non Inventory%29.savedquery" />
+    <Content Include="Views\Kit Product Lookup View.savedquery" />
+    <Content Include="Views\Mail Forward Products.savedquery" />
+    <Content Include="Views\My Active Contacts.savedquery" />
+    <Content Include="Views\My Applications.savedquery" />
+    <Content Include="Views\My Connections.savedquery" />
+    <Content Include="Views\My Connections1.savedquery" />
+    <Content Include="Views\My Contacts.savedquery" />
+    <Content Include="Views\My Contacts Not at Company.savedquery" />
+    <Content Include="Views\My Cusotm Addresses.savedquery" />
+    <Content Include="Views\My Orders.savedquery" />
+    <Content Include="Views\My Outlook Contacts.savedquery" />
+    <Content Include="Views\My Project Contract Connections.savedquery" />
+    <Content Include="Views\My Project Contracts.savedquery" />
+    <Content Include="Views\My Recent Orders.savedquery" />
+    <Content Include="Views\My Sales Contracts.savedquery" />
+    <Content Include="Views\My Service-Maintenance Based Orders.savedquery" />
+    <Content Include="Views\Non Canceled Project Contracts.savedquery" />
+    <Content Include="Views\Non Cancelled Orders.savedquery" />
+    <Content Include="Views\Order Advanced Find View.savedquery" />
+    <Content Include="Views\Order Associated View.savedquery" />
+    <Content Include="Views\Order Lookup View.savedquery" />
+    <Content Include="Views\Package Type Products.savedquery" />
+    <Content Include="Views\Product %28Field Service Product Type is not a Service%29.savedquery" />
+    <Content Include="Views\Product Advanced Find View.savedquery" />
+    <Content Include="Views\Product Associated View.savedquery" />
+    <Content Include="Views\Product Bundle Associated View.savedquery" />
+    <Content Include="Views\Product Family Lookup View.savedquery" />
+    <Content Include="Views\Product Lookup View.savedquery" />
+    <Content Include="Views\Product Suggestions.savedquery" />
+    <Content Include="Views\Products.savedquery" />
+    <Content Include="Views\Products in Parent Price List.savedquery" />
+    <Content Include="Views\Products With Price List.savedquery" />
+    <Content Include="Views\Project Contract Lookup View.savedquery" />
+    <Content Include="Views\Quick Find Active Applications.savedquery" />
+    <Content Include="Views\Quick Find Active Contacts.savedquery" />
+    <Content Include="Views\Quick Find Active Cusotm Addresses.savedquery" />
+    <Content Include="Views\Quick Find All Orders.savedquery" />
+    <Content Include="Views\Quick Find All Products.savedquery" />
+    <Content Include="Views\Quick Find Marketing List Members.savedquery" />
+    <Content Include="Views\Retired Product Bundles.savedquery" />
+    <Content Include="Views\Retired Products, Families &amp; Bundles.savedquery" />
+    <Content Include="Views\Selected Contacts Campaigns.savedquery" />
+    <Content Include="Views\Speed Service Products.savedquery" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Web\IntellisenseFiles\App to order Classic Form - Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Application Form - Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Application Tab Template Form - Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Application Type Form - Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Connector Form - Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Contact Form - AI for Sales.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Contact Form - Contact - Mobile.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Contact Form - Contact for Interactive experience.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Contact Form - Contact.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Contact Form - Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Contact Form - TimelineWallControl - Contact - Main.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Contact Price List Form - Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Custom Address Form - Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\activitypointer_activitytypecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\activitypointer_deliveryprioritycode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\componentstate.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\connectortype.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\connector_statecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\connector_statuscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_accountrolecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_address1_addresstypecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_address1_freighttermscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_address1_shippingmethodcode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_address2_addresstypecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_address2_freighttermscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_address2_shippingmethodcode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_address3_addresstypecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_address3_freighttermscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_address3_shippingmethodcode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_customersizecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_customertypecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_educationcode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_familystatuscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_gendercode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_haschildrencode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_leadsourcecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_msdyn_orgchangestatus.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_paymenttermscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_preferredappointmentdaycode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_preferredappointmenttimecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_preferredcontactmethodcode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_shippingmethodcode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_statecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_statuscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\contact_territorycode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\msdyn_billingmethod.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\msdyn_billingstatus.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\msdyn_consoleapplicationtemplate_statecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\msdyn_consoleapplicationtemplate_statuscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\msdyn_consoleapplicationtype_statecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\msdyn_consoleapplicationtype_statuscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\msdyn_contactpricelist_statecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\msdyn_contactpricelist_statuscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\msdyn_fieldserviceproducttype.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\msdyn_linetype.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\msdyn_projectcontractstate.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\msdyn_projectcontractstatus.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\msdyn_salesorder_msdyn_ordertype.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\orderclose_statecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\orderclose_statuscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\product_productstructure.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\product_producttypecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\product_statecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\product_statuscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\qooidetail_skippricecalculation.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\qooiproduct_producttype.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\qooiproduct_propertiesconfigurationstatus.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\qooi_pricingerrorcode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\qooi_skippricecalculation.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\salesorderdetail_salesorderstatecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\salesorderdetail_shipto_freighttermscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\salesorder_freighttermscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\salesorder_paymenttermscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\salesorder_prioritycode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\salesorder_shippingmethodcode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\salesorder_shipto_freighttermscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\salesorder_statecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\salesorder_statuscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\socialprofile_community.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\ss_application_ss_applicationtype.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\ss_application_statecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\ss_application_statuscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\ss_apptoorderclassic_statecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\ss_apptoorderclassic_statuscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\ss_customaddress_statecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\ss_customaddress_statuscode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\_orderclose_instancetypecode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\enums\_orderclose_prioritycode.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Order Close Form - Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Order Form - Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Order Form - Order.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Order Line Form - Field Service Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Order Line Form - Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Order Line Form - Project Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Product Form - Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Product Form - Product.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Product Form - Project Information.d.ts" />
+    <TypeScriptCompile Include="Web\IntellisenseFiles\Xrm.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Charts\" />
+    <Folder Include="Sitemap\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10116</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:10116/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

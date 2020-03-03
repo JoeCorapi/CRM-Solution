@@ -1,0 +1,30 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" output-format="xml-platform" mapping="logical">
+      <entity name="ss_application">
+        <attribute name="ss_name" />
+        <order attribute="ss_name" descending="false" />
+        <attribute name="statecode" />
+        <attribute name="ss_product" />
+        <attribute name="ss_destinationaddress" />
+        <attribute name="ss_customer" />
+        <attribute name="createdon" />
+        <attribute name="ss_applicationtype" />
+        <attribute name="ss_applicationid" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" jump="ss_name" select="1" preview="1" icon="1" object="10380">
+      <row name="result" id="ss_applicationid">
+        <cell name="ss_name" width="150" />
+        <cell name="ss_customer" width="100" />
+        <cell name="ss_applicationtype" width="100" />
+        <cell name="ss_product" width="100" />
+        <cell name="ss_destinationaddress" width="100" />
+        <cell name="createdon" width="100" />
+        <cell name="statecode" width="100" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

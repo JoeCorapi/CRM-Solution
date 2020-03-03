@@ -1,0 +1,26 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" mapping="logical">
+      <entity name="ss_application">
+        <attribute name="ss_applicationid" />
+        <attribute name="ss_name" />
+        <attribute name="createdon" />
+        <order attribute="ss_name" descending="false" />
+        <filter type="and">
+          <condition attribute="statecode" operator="eq" value="0" />
+        </filter>
+        <filter type="or" isquickfindfields="1">
+          <condition attribute="ss_name" operator="like" value="{0}" />
+        </filter>
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" jump="ss_name" select="1" icon="1" preview="1" object="10380">
+      <row name="result" id="ss_applicationid">
+        <cell name="ss_name" width="300" />
+        <cell name="createdon" width="125" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

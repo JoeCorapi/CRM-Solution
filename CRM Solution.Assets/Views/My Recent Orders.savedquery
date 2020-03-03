@@ -1,0 +1,14 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" output-format="xml-platform" mapping="logical">
+      <entity name="salesorder">
+        <filter type="and">
+          <condition attribute="ownerid" operator="eq-userid" />
+          <condition attribute="modifiedon" operator="last-x-days" value="365" />
+        </filter>
+        <attribute name="salesorderid" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml />
+</view>

@@ -1,0 +1,12 @@
+﻿<view>
+  <fetchxml />
+  <layoutxml>
+    <grid name="resultset" object="2" jump="firstname" select="1" preview="1" icon="1">
+      <row name="result" id="contactid">
+        <cell name="firstname" />
+        <cell name="lastname" />
+        <cell name="parentcustomerid" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

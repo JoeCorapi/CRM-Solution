@@ -1,0 +1,1979 @@
+{
+  "_organizations": [
+    {
+      "OrganizationURL": "https://corapitrial2.crm.dynamics.com",
+      "HomeRealmUri": "",
+      "OrganizationVersion": "9.1.0.13535",
+      "MFAAppId": "",
+      "MFAReturnUrl": "",
+      "ConnectionProtocol": 0,
+      "_projects": [
+        {
+          "Name": "CRM Solution.Assets.csproj",
+          "NameWithoutExtension": "CRM Solution.Assets",
+          "ProjectPreferences": {
+            "JavaScriptsPath": "\\Web",
+            "TypeScriptsPath": "\\Web",
+            "ImagesPath": "\\Web",
+            "WebFilesPath": "\\Web",
+            "CSSPath": "\\Web",
+            "XslPath": "\\Web",
+            "XmlPath": "\\Web",
+            "SilverlightPath": "\\Xap",
+            "JavaScriptIntellisenseSubDirectoryPath": "\\IntellisenseFiles",
+            "TypeScriptIntellisenseSubDirectoryPath": "\\IntellisenseFiles",
+            "SitemapPath": "\\Sitemap",
+            "ChartsPath": "\\Charts",
+            "ViewPath": "\\Views",
+            "ProxyClassesPath": "\\ProxyClasses",
+            "ProxyEnumClassesPath": "\\Enums",
+            "EmailTemplatesPath": "\\EmailTemplates",
+            "ProcessesPath": "\\Processes",
+            "EntityMetadataPath": "\\EntityMetadata",
+            "PluginConfigurationsPath": "\\PluginConfigurations",
+            "BaseProxyClassRelativePath": "\\",
+            "CustomAssemblyConfigPath": "\\AssemblyConfig",
+            "JavaScriptMinification": 1,
+            "CSSMinification": 1,
+            "AutoRefreshIntellisenseFilesOnMetadataChanges": true,
+            "ResourcesPath": "\\Web",
+            "ServiceContextName": "CrmServiceContext",
+            "EnumsFileName": "OptionSetEnums",
+            "BaseProxyClassFileName": "BaseProxyClass",
+            "AutoRefreshProxyClassesOnMetadataChanges": true,
+            "PluginPath": "",
+            "WorkflowPath": "",
+            "ProxyClassGenerationOptions": 1,
+            "ProxyClassGenerationMethod": 1,
+            "ProxyClassNamingConvention": 1,
+            "ProxyClassNamingPattern": "{0}",
+            "UseStronglyTypeNameForProxyClassRelatedEntities": true
+          },
+          "_files": [
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "_orderclose_instancetypecode",
+              "EntityLogicalName": "orderclose",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\_orderclose_instancetypecode.d.ts",
+              "Name": "_orderclose_instancetypecode.d.ts",
+              "CrmId": "b0348ed1-a64a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "_orderclose_prioritycode",
+              "EntityLogicalName": "orderclose",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\_orderclose_prioritycode.d.ts",
+              "Name": "_orderclose_prioritycode.d.ts",
+              "CrmId": "ad348ed1-a64a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Applications.savedquery",
+              "Name": "Active Applications.savedquery",
+              "CrmId": "4ffc6702-7ff2-4a2d-87f9-bce33c167d08"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Contacts Subgrid View.savedquery",
+              "Name": "Active Contacts Subgrid View.savedquery",
+              "CrmId": "73bc2d9b-4e0e-424c-8839-ed59d6817e3a"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Contacts.savedquery",
+              "Name": "Active Contacts.savedquery",
+              "CrmId": "00000000-0000-0000-00aa-000010001004"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Cusotm Addresses.savedquery",
+              "Name": "Active Cusotm Addresses.savedquery",
+              "CrmId": "5970a79f-39b7-4d6a-8410-46b4c439ddf0"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Members.savedquery",
+              "Name": "Active Members.savedquery",
+              "CrmId": "33a05713-9d37-4ce8-b41f-bc515f426271"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Orders.savedquery",
+              "Name": "Active Orders.savedquery",
+              "CrmId": "e6f001df-303c-447b-b184-0f65cd00c3f9"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Product Bundles.savedquery",
+              "Name": "Active Product Bundles.savedquery",
+              "CrmId": "06377234-f167-47e7-bd5e-f7cc61b82f99"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Products (Field Service Product Type is Inventory or Non Inventory).savedquery",
+              "Name": "Active Products (Field Service Product Type is Inventory or Non Inventory).savedquery",
+              "CrmId": "2bf8e3b8-0030-e311-974a-00155da8fa1b"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Products (Field Service Product Type is Inventory).savedquery",
+              "Name": "Active Products (Field Service Product Type is Inventory).savedquery",
+              "CrmId": "637d30fc-5ae1-e111-bbe0-000c2959f9b8"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Products (Field Service Product Type is not a Service).savedquery",
+              "Name": "Active Products (Field Service Product Type is not a Service).savedquery",
+              "CrmId": "af259750-0010-e311-974a-00155da8fa1b"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Products (Field Service).savedquery",
+              "Name": "Active Products (Field Service).savedquery",
+              "CrmId": "ccf8b615-db4d-e811-8148-000d3a061a01"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Products Lookup View.savedquery",
+              "Name": "Active Products Lookup View.savedquery",
+              "CrmId": "58afc3c5-8add-4552-98cb-473bc8f75619"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Products, Families & Bundles.savedquery",
+              "Name": "Active Products, Families & Bundles.savedquery",
+              "CrmId": "a066d18a-8a4a-44ee-b78e-9a870dc799dd"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Project Contracts.savedquery",
+              "Name": "Active Project Contracts.savedquery",
+              "CrmId": "cef77ffb-192d-4f8c-87a5-1823e6d8b6e8"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Services (Field Service Product Type is a Service).savedquery",
+              "Name": "Active Services (Field Service Product Type is a Service).savedquery",
+              "CrmId": "2c824b6f-3b48-e111-93b3-000c2959f9b8"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Active Services (Field Service Product Type is Service).savedquery",
+              "Name": "Active Services (Field Service Product Type is Service).savedquery",
+              "CrmId": "65cd6af4-ff0f-e311-974a-00155da8fa1b"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "activitypointer_activitytypecode",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\activitypointer_activitytypecode.d.ts",
+              "Name": "activitypointer_activitytypecode.d.ts",
+              "CrmId": "a4092cfa-4fae-416d-af8d-795aa36ebb8b"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "activitypointer_deliveryprioritycode",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\activitypointer_deliveryprioritycode.d.ts",
+              "Name": "activitypointer_deliveryprioritycode.d.ts",
+              "CrmId": "66b34a3e-314e-4aa0-b417-4df13506add0"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\All Contacts (not available).savedquery",
+              "Name": "All Contacts (not available).savedquery",
+              "CrmId": "3a3d00e4-ad90-4aa3-b9ab-1e4f82900d29"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\All Contacts Not at Company.savedquery",
+              "Name": "All Contacts Not at Company.savedquery",
+              "CrmId": "973e2d26-653a-e911-8185-000d3a070f2c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\All Contacts.savedquery",
+              "Name": "All Contacts.savedquery",
+              "CrmId": "0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\All Members.savedquery",
+              "Name": "All Members.savedquery",
+              "CrmId": "2f0d0ede-d356-4b1e-83bd-e978f10e3eeb"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\All Orders.savedquery",
+              "Name": "All Orders.savedquery",
+              "CrmId": "c237560a-5dad-e411-80d5-00155dbeee13"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\All Product Bundles.savedquery",
+              "Name": "All Product Bundles.savedquery",
+              "CrmId": "eab4cded-a39f-4b21-b06a-49a45bfa47fd"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\All Products (Field Service).savedquery",
+              "Name": "All Products (Field Service).savedquery",
+              "CrmId": "f96027ce-5a35-48ac-8ac9-9d7235c3fa98"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\All Products, Families & Bundles.savedquery",
+              "Name": "All Products, Families & Bundles.savedquery",
+              "CrmId": "44aeb57e-840f-4026-b898-24b261493c3c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\All Project Contracts.savedquery",
+              "Name": "All Project Contracts.savedquery",
+              "CrmId": "4b2438f6-4949-484b-a272-6f694a2b2fae"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\All Service-Maintenance Based Orders.savedquery",
+              "Name": "All Service-Maintenance Based Orders.savedquery",
+              "CrmId": "40e6993c-834d-e811-8147-000d3a0601ba"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "ss_apptoorderclassic",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\App to order Classic Form - Information.d.ts",
+              "Name": "App to order Classic Form - Information.d.ts",
+              "CrmId": "e0d39868-78da-47f9-92dd-f8c73424a171"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "ss_apptoorderclassic",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\App to order Classic Form - Information.js",
+              "Name": "App to order Classic Form - Information.js",
+              "CrmId": "e0d39868-78da-47f9-92dd-f8c73424a171"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Application Advanced Find View.savedquery",
+              "Name": "Application Advanced Find View.savedquery",
+              "CrmId": "f0f45c82-a7be-4893-9424-0f019b1a4190"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Application Associated View.savedquery",
+              "Name": "Application Associated View.savedquery",
+              "CrmId": "58554db1-40c7-4d14-bda2-8e2d28e49ebc"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "ss_application",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Application Form - Information.d.ts",
+              "Name": "Application Form - Information.d.ts",
+              "CrmId": "162b5e5b-dd8e-4497-a8bc-de12f587590c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "ss_application",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Application Form - Information.js",
+              "Name": "Application Form - Information.js",
+              "CrmId": "162b5e5b-dd8e-4497-a8bc-de12f587590c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Application Lookup View.savedquery",
+              "Name": "Application Lookup View.savedquery",
+              "CrmId": "56f67086-8518-4572-9468-9503965504e9"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "msdyn_consoleapplicationtemplate",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Application Tab Template Form - Information.d.ts",
+              "Name": "Application Tab Template Form - Information.d.ts",
+              "CrmId": "8d39ebda-4f57-4f83-8d39-39e1bb2d6a0d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "msdyn_consoleapplicationtemplate",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Application Tab Template Form - Information.js",
+              "Name": "Application Tab Template Form - Information.js",
+              "CrmId": "8d39ebda-4f57-4f83-8d39-39e1bb2d6a0d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "msdyn_consoleapplicationtype",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Application Type Form - Information.d.ts",
+              "Name": "Application Type Form - Information.d.ts",
+              "CrmId": "e5c56ff7-4104-46e5-93d6-223fef077785"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "msdyn_consoleapplicationtype",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Application Type Form - Information.js",
+              "Name": "Application Type Form - Information.js",
+              "CrmId": "e5c56ff7-4104-46e5-93d6-223fef077785"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.WorkflowXamlFile, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Processes\\Application_to_Order.workflow",
+              "Name": "Application_to_Order.workflow",
+              "CrmId": "ac75f158-c7d6-4c00-a519-b3871ed51401"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptFile, SS.XrmToolkit.Common",
+              "GulpTaskName": "",
+              "GulpOutputFile": "app-type-rules.js",
+              "ForceExecutionOfGulpTaskOnBulkUpdate": false,
+              "MinifyMode": 1,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\app-type-rules.js",
+              "Name": "app-type-rules.js",
+              "CrmId": "2b59dc87-fa5c-ea11-a811-000d3a35b480"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Bundle Lookup View.savedquery",
+              "Name": "Bundle Lookup View.savedquery",
+              "CrmId": "dd35464e-bb9d-4575-9270-ba09db4244c1"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Bundle Product Lookup View.savedquery",
+              "Name": "Bundle Product Lookup View.savedquery",
+              "CrmId": "89a80f99-f388-412a-add2-d75c6acd930f"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.CustomActionXamlFile, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Processes\\Calculate Volume.customaction",
+              "Name": "Calculate Volume.customaction",
+              "CrmId": "62363f35-20c7-4539-961a-fdb818cc2e1b"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.CustomActionXamlFile, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Processes\\Close Application Status.customaction",
+              "Name": "Close Application Status.customaction",
+              "CrmId": "fad287d2-9eec-47bf-9a64-e90f1d6ff7e6"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "componentstate",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\componentstate.d.ts",
+              "Name": "componentstate.d.ts",
+              "CrmId": "faece09f-cefc-11de-8150-00155da18b00"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "connector",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Connector Form - Information.d.ts",
+              "Name": "Connector Form - Information.d.ts",
+              "CrmId": "f89f5f24-e652-48eb-aa37-2a4d7e19b0ae"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "connector",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Connector Form - Information.js",
+              "Name": "Connector Form - Information.js",
+              "CrmId": "f89f5f24-e652-48eb-aa37-2a4d7e19b0ae"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "connector_statecode",
+              "EntityLogicalName": "connector",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\connector_statecode.d.ts",
+              "Name": "connector_statecode.d.ts",
+              "CrmId": "73785c73-a14a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "connector_statuscode",
+              "EntityLogicalName": "connector",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\connector_statuscode.d.ts",
+              "Name": "connector_statuscode.d.ts",
+              "CrmId": "7d785c73-a14a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "connectortype",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\connectortype.d.ts",
+              "Name": "connectortype.d.ts",
+              "CrmId": "da6119b5-2033-4d85-99d4-0548f262ea39"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Contact Associated View.savedquery",
+              "Name": "Contact Associated View.savedquery",
+              "CrmId": "00000000-0000-0000-00aa-000010001210"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Contact De-Dup lookup display.savedquery",
+              "Name": "Contact De-Dup lookup display.savedquery",
+              "CrmId": "c14e0638-4996-4720-97cd-c58f0df74220"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Contact Form - AI for Sales.d.ts",
+              "Name": "Contact Form - AI for Sales.d.ts",
+              "CrmId": "293c878f-f068-40a0-ae48-4297e060871c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Contact Form - AI for Sales.js",
+              "Name": "Contact Form - AI for Sales.js",
+              "CrmId": "293c878f-f068-40a0-ae48-4297e060871c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Contact Form - Contact - Mobile.d.ts",
+              "Name": "Contact Form - Contact - Mobile.d.ts",
+              "CrmId": "28b5b9b6-dfa2-45d6-8a81-3f6ba02a098a"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Contact Form - Contact - Mobile.js",
+              "Name": "Contact Form - Contact - Mobile.js",
+              "CrmId": "28b5b9b6-dfa2-45d6-8a81-3f6ba02a098a"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Contact Form - Contact for Interactive experience.d.ts",
+              "Name": "Contact Form - Contact for Interactive experience.d.ts",
+              "CrmId": "cc760212-3eab-4009-b5c3-ea9cf6f3e141"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Contact Form - Contact for Interactive experience.js",
+              "Name": "Contact Form - Contact for Interactive experience.js",
+              "CrmId": "cc760212-3eab-4009-b5c3-ea9cf6f3e141"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Contact Form - Contact.d.ts",
+              "Name": "Contact Form - Contact.d.ts",
+              "CrmId": "1fed44d1-ae68-4a41-bd2b-f13acac4acfa"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Contact Form - Contact.js",
+              "Name": "Contact Form - Contact.js",
+              "CrmId": "1fed44d1-ae68-4a41-bd2b-f13acac4acfa"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Contact Form - Information.d.ts",
+              "Name": "Contact Form - Information.d.ts",
+              "CrmId": "894cc46a-b0cb-4ab0-8bf6-200544e46a2d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Contact Form - Information.js",
+              "Name": "Contact Form - Information.js",
+              "CrmId": "894cc46a-b0cb-4ab0-8bf6-200544e46a2d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Contact Form - TimelineWallControl - Contact - Main.d.ts",
+              "Name": "Contact Form - TimelineWallControl - Contact - Main.d.ts",
+              "CrmId": "986258b5-2985-4ae0-970a-5e1d108ab793"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Contact Form - TimelineWallControl - Contact - Main.js",
+              "Name": "Contact Form - TimelineWallControl - Contact - Main.js",
+              "CrmId": "986258b5-2985-4ae0-970a-5e1d108ab793"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Contact List Members View.savedquery",
+              "Name": "Contact List Members View.savedquery",
+              "CrmId": "58fb20ff-d5be-406f-908e-c777e9dedf5f"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Contact multi-line lookup display.savedquery",
+              "Name": "Contact multi-line lookup display.savedquery",
+              "CrmId": "c14e0638-4996-4720-97cd-c58f0df74228"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "msdyn_contactpricelist",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Contact Price List Form - Information.d.ts",
+              "Name": "Contact Price List Form - Information.d.ts",
+              "CrmId": "cfc85cde-bca0-43fc-9ed1-7da69ba1c6ee"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "msdyn_contactpricelist",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Contact Price List Form - Information.js",
+              "Name": "Contact Price List Form - Information.js",
+              "CrmId": "cfc85cde-bca0-43fc-9ed1-7da69ba1c6ee"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_accountrolecode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_accountrolecode.d.ts",
+              "Name": "contact_accountrolecode.d.ts",
+              "CrmId": "a3b48905-7d78-47d1-bb56-da3cbd0975ca"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_address1_addresstypecode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_address1_addresstypecode.d.ts",
+              "Name": "contact_address1_addresstypecode.d.ts",
+              "CrmId": "8b6e9a56-6a18-4b17-9f5d-cfdbd46d9e0b"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_address1_freighttermscode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_address1_freighttermscode.d.ts",
+              "Name": "contact_address1_freighttermscode.d.ts",
+              "CrmId": "919726a2-8436-44ef-8c66-6117c442b862"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_address1_shippingmethodcode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_address1_shippingmethodcode.d.ts",
+              "Name": "contact_address1_shippingmethodcode.d.ts",
+              "CrmId": "b01576e7-514c-45d5-a264-e4fbfd53f615"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_address2_addresstypecode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_address2_addresstypecode.d.ts",
+              "Name": "contact_address2_addresstypecode.d.ts",
+              "CrmId": "c4714e0b-7573-4f51-8cb7-46fc321a5089"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_address2_freighttermscode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_address2_freighttermscode.d.ts",
+              "Name": "contact_address2_freighttermscode.d.ts",
+              "CrmId": "dc2aabc1-4efa-4667-b474-1aad1b4cf244"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_address2_shippingmethodcode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_address2_shippingmethodcode.d.ts",
+              "Name": "contact_address2_shippingmethodcode.d.ts",
+              "CrmId": "60d225d8-b4ab-4e5a-9d18-3dd946e1a413"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_address3_addresstypecode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_address3_addresstypecode.d.ts",
+              "Name": "contact_address3_addresstypecode.d.ts",
+              "CrmId": "97534134-54f6-42fa-914b-2f1531cddfdc"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_address3_freighttermscode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_address3_freighttermscode.d.ts",
+              "Name": "contact_address3_freighttermscode.d.ts",
+              "CrmId": "2a18f883-f938-432f-b27f-e23e507bdf08"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_address3_shippingmethodcode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_address3_shippingmethodcode.d.ts",
+              "Name": "contact_address3_shippingmethodcode.d.ts",
+              "CrmId": "147717a9-2dff-4bc5-9f9e-de99ae7c1c86"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_customersizecode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_customersizecode.d.ts",
+              "Name": "contact_customersizecode.d.ts",
+              "CrmId": "97a8f6fc-e23a-4279-99c0-df748136e38b"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_customertypecode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_customertypecode.d.ts",
+              "Name": "contact_customertypecode.d.ts",
+              "CrmId": "ee3ff3c1-739e-4dc6-a452-c85f3d52814e"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_educationcode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_educationcode.d.ts",
+              "Name": "contact_educationcode.d.ts",
+              "CrmId": "96b15669-cfc3-42f9-aa6a-8f0595182c30"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_familystatuscode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_familystatuscode.d.ts",
+              "Name": "contact_familystatuscode.d.ts",
+              "CrmId": "2da4a488-81c9-419d-ad1c-fb0d33a1e0ef"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_gendercode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_gendercode.d.ts",
+              "Name": "contact_gendercode.d.ts",
+              "CrmId": "cb7f9ccb-21b2-45b5-acf5-0a62344d0860"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_haschildrencode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_haschildrencode.d.ts",
+              "Name": "contact_haschildrencode.d.ts",
+              "CrmId": "ced703d8-357b-4e56-94ec-1a045156036f"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_leadsourcecode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_leadsourcecode.d.ts",
+              "Name": "contact_leadsourcecode.d.ts",
+              "CrmId": "e9e66ceb-7c14-4c03-a182-b2013d38797c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_msdyn_orgchangestatus",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_msdyn_orgchangestatus.d.ts",
+              "Name": "contact_msdyn_orgchangestatus.d.ts",
+              "CrmId": "b36a47d1-a94a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_paymenttermscode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_paymenttermscode.d.ts",
+              "Name": "contact_paymenttermscode.d.ts",
+              "CrmId": "7154ab7b-7c99-4712-9d8c-7eaaae4f6f78"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_preferredappointmentdaycode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_preferredappointmentdaycode.d.ts",
+              "Name": "contact_preferredappointmentdaycode.d.ts",
+              "CrmId": "51769958-f7a4-41b4-a3ea-0992249c6b17"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_preferredappointmenttimecode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_preferredappointmenttimecode.d.ts",
+              "Name": "contact_preferredappointmenttimecode.d.ts",
+              "CrmId": "5b1d1539-a020-4a16-8f31-c57fce454b53"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_preferredcontactmethodcode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_preferredcontactmethodcode.d.ts",
+              "Name": "contact_preferredcontactmethodcode.d.ts",
+              "CrmId": "4b838079-0334-49b3-9f72-0434392dab2c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_shippingmethodcode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_shippingmethodcode.d.ts",
+              "Name": "contact_shippingmethodcode.d.ts",
+              "CrmId": "334b102e-4481-41a5-9b27-8e39ecd9e496"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_statecode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_statecode.d.ts",
+              "Name": "contact_statecode.d.ts",
+              "CrmId": "88fa5ad0-2a4b-4281-ac9c-b4e71fb77920"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_statuscode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_statuscode.d.ts",
+              "Name": "contact_statuscode.d.ts",
+              "CrmId": "87f21441-f53d-4654-9c26-e08e78facd78"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "contact_territorycode",
+              "EntityLogicalName": "contact",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\contact_territorycode.d.ts",
+              "Name": "contact_territorycode.d.ts",
+              "CrmId": "e3d3f048-333e-4b83-9d87-609f4ee093f3"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Contacts  Influenced Deals That We Won.savedquery",
+              "Name": "Contacts  Influenced Deals That We Won.savedquery",
+              "CrmId": "0a8fa653-4147-4282-bf6b-168cfa839803"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Contacts  No Campaign Activities in Last 3 Months.savedquery",
+              "Name": "Contacts  No Campaign Activities in Last 3 Months.savedquery",
+              "CrmId": "927e6cd8-b3ed-4c20-a154-b8bd8a86d172"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Contacts  No Orders in Last 6 Months.savedquery",
+              "Name": "Contacts  No Orders in Last 6 Months.savedquery",
+              "CrmId": "9818766e-7172-4d59-9279-013835c3decd"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Contacts  Responded to Campaigns in Last 6 Months.savedquery",
+              "Name": "Contacts  Responded to Campaigns in Last 6 Months.savedquery",
+              "CrmId": "9c241a33-ca0b-4e50-ae92-db780d5b2a12"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Contacts Advanced Find View.savedquery",
+              "Name": "Contacts Advanced Find View.savedquery",
+              "CrmId": "00000000-0000-0000-00aa-000000666400"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Contacts Being Followed.savedquery",
+              "Name": "Contacts Being Followed.savedquery",
+              "CrmId": "3a282da1-5d90-e011-95ae-00155d9cfa03"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Contacts BulkOperation View.savedquery",
+              "Name": "Contacts BulkOperation View.savedquery",
+              "CrmId": "14ea1914-0e2c-4918-8eca-60930324f18f"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Contacts I Follow.savedquery",
+              "Name": "Contacts I Follow.savedquery",
+              "CrmId": "3a282da1-5d90-e011-95ae-00155d9cfa02"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Contacts Lookup View.savedquery",
+              "Name": "Contacts Lookup View.savedquery",
+              "CrmId": "a2d479c5-53e3-4c69-addd-802327e67a0d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Contacts Mobile Client Draft View.savedquery",
+              "Name": "Contacts Mobile Client Draft View.savedquery",
+              "CrmId": "fe7c9f99-efe8-44dc-9191-619492401b0c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\ContactsOver65.savedquery",
+              "Name": "ContactsOver65.savedquery",
+              "CrmId": "e4f9fd52-ea42-ea11-a812-000d3a300a53"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Cusotm Address Advanced Find View.savedquery",
+              "Name": "Cusotm Address Advanced Find View.savedquery",
+              "CrmId": "ea058465-8c73-48c8-9e6a-71e48aa7a5d1"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Cusotm Address Associated View.savedquery",
+              "Name": "Cusotm Address Associated View.savedquery",
+              "CrmId": "5df35d10-7b52-4e01-9e7b-b21b189bc2bb"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Cusotm Address Lookup View.savedquery",
+              "Name": "Cusotm Address Lookup View.savedquery",
+              "CrmId": "8f70c77d-3f3e-48bf-9e4f-c822ab689a01"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "ss_customaddress",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Custom Address Form - Information.d.ts",
+              "Name": "Custom Address Form - Information.d.ts",
+              "CrmId": "f83437cf-194b-4a57-95d4-21590e23e110"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "ss_customaddress",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Custom Address Form - Information.js",
+              "Name": "Custom Address Form - Information.js",
+              "CrmId": "f83437cf-194b-4a57-95d4-21590e23e110"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Custom Address Quick View.savedquery",
+              "Name": "Custom Address Quick View.savedquery",
+              "CrmId": "eac68434-d651-ea11-a812-000d3a35b8ce"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Draft Product Bundles.savedquery",
+              "Name": "Draft Product Bundles.savedquery",
+              "CrmId": "fc9c9aa7-16d8-4ef7-a540-2604464efac1"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Draft Products, Families & Bundles.savedquery",
+              "Name": "Draft Products, Families & Bundles.savedquery",
+              "CrmId": "a6c39ba9-ee07-4587-98a7-c23cb1ef496e"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Entitlement Contacts.savedquery",
+              "Name": "Entitlement Contacts.savedquery",
+              "CrmId": "eda26f1e-dbcc-40ad-91f2-ff2878d1d8d8"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Entitlement Products.savedquery",
+              "Name": "Entitlement Products.savedquery",
+              "CrmId": "9084dda0-1101-4339-8f19-aea4d5b6b474"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Excluded Contacts Campaigns.savedquery",
+              "Name": "Excluded Contacts Campaigns.savedquery",
+              "CrmId": "69103b65-f27e-45ce-a69c-eb1a7c805a45"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Export Field Translations.savedquery",
+              "Name": "Export Field Translations.savedquery",
+              "CrmId": "9cfe2a9f-13c4-e311-8f2e-00155d9d2505"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Full View.savedquery",
+              "Name": "Full View.savedquery",
+              "CrmId": "e30620d3-dd46-ea11-a812-000d3a300a53"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Inactive Applications.savedquery",
+              "Name": "Inactive Applications.savedquery",
+              "CrmId": "5e3cd035-7624-4a37-9dc8-7f74941409d1"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Inactive Contacts.savedquery",
+              "Name": "Inactive Contacts.savedquery",
+              "CrmId": "00000000-0000-0000-00aa-000010001033"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Inactive Cusotm Addresses.savedquery",
+              "Name": "Inactive Cusotm Addresses.savedquery",
+              "CrmId": "95c150a1-4c64-499f-b1f4-eb4ccbc95784"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Inactive Members.savedquery",
+              "Name": "Inactive Members.savedquery",
+              "CrmId": "09963269-65e7-4f70-963f-a61ee495e705"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Inactive Services (Field Service Product Type is Inventory or Non Inventory).savedquery",
+              "Name": "Inactive Services (Field Service Product Type is Inventory or Non Inventory).savedquery",
+              "CrmId": "62e2ac64-0230-e311-974a-00155da8fa1b"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Kit Product Lookup View.savedquery",
+              "Name": "Kit Product Lookup View.savedquery",
+              "CrmId": "18b841eb-8738-4bcb-9a59-af7f906e73b4"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Mail Forward Products.savedquery",
+              "Name": "Mail Forward Products.savedquery",
+              "CrmId": "e7bdd477-3e4d-ea11-a812-000d3a35b8ce"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "msdyn_billingmethod",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\msdyn_billingmethod.d.ts",
+              "Name": "msdyn_billingmethod.d.ts",
+              "CrmId": "3bc217ca-6201-4b25-a640-bd64152929df"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "msdyn_billingstatus",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\msdyn_billingstatus.d.ts",
+              "Name": "msdyn_billingstatus.d.ts",
+              "CrmId": "fa160058-8766-4d7a-a730-6675d594120d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "msdyn_consoleapplicationtemplate_statecode",
+              "EntityLogicalName": "msdyn_consoleapplicationtemplate",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\msdyn_consoleapplicationtemplate_statecode.d.ts",
+              "Name": "msdyn_consoleapplicationtemplate_statecode.d.ts",
+              "CrmId": "9a07d1a5-c04a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "msdyn_consoleapplicationtemplate_statuscode",
+              "EntityLogicalName": "msdyn_consoleapplicationtemplate",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\msdyn_consoleapplicationtemplate_statuscode.d.ts",
+              "Name": "msdyn_consoleapplicationtemplate_statuscode.d.ts",
+              "CrmId": "a407d1a5-c04a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "msdyn_consoleapplicationtype_statecode",
+              "EntityLogicalName": "msdyn_consoleapplicationtype",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\msdyn_consoleapplicationtype_statecode.d.ts",
+              "Name": "msdyn_consoleapplicationtype_statecode.d.ts",
+              "CrmId": "c909d1a5-c04a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "msdyn_consoleapplicationtype_statuscode",
+              "EntityLogicalName": "msdyn_consoleapplicationtype",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\msdyn_consoleapplicationtype_statuscode.d.ts",
+              "Name": "msdyn_consoleapplicationtype_statuscode.d.ts",
+              "CrmId": "d309d1a5-c04a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "msdyn_contactpricelist_statecode",
+              "EntityLogicalName": "msdyn_contactpricelist",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\msdyn_contactpricelist_statecode.d.ts",
+              "Name": "msdyn_contactpricelist_statecode.d.ts",
+              "CrmId": "cb1e59a1-b34a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "msdyn_contactpricelist_statuscode",
+              "EntityLogicalName": "msdyn_contactpricelist",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\msdyn_contactpricelist_statuscode.d.ts",
+              "Name": "msdyn_contactpricelist_statuscode.d.ts",
+              "CrmId": "d51e59a1-b34a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "msdyn_fieldserviceproducttype",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\msdyn_fieldserviceproducttype.d.ts",
+              "Name": "msdyn_fieldserviceproducttype.d.ts",
+              "CrmId": "a3cb534d-6c83-4615-a606-d886aa69788b"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "msdyn_linetype",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\msdyn_linetype.d.ts",
+              "Name": "msdyn_linetype.d.ts",
+              "CrmId": "366ed499-e47e-453e-8641-ea4670e6700f"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "msdyn_projectcontractstate",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\msdyn_projectcontractstate.d.ts",
+              "Name": "msdyn_projectcontractstate.d.ts",
+              "CrmId": "ed24d34c-7b7d-47f1-93bc-d75a49c693c9"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "msdyn_projectcontractstatus",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\msdyn_projectcontractstatus.d.ts",
+              "Name": "msdyn_projectcontractstatus.d.ts",
+              "CrmId": "5f41fed7-abdc-4715-9226-bebca2543b5d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "msdyn_salesorder_msdyn_ordertype",
+              "EntityLogicalName": "salesorder",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\msdyn_salesorder_msdyn_ordertype.d.ts",
+              "Name": "msdyn_salesorder_msdyn_ordertype.d.ts",
+              "CrmId": "e5f088d9-b34a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\My Active Contacts.savedquery",
+              "Name": "My Active Contacts.savedquery",
+              "CrmId": "00000000-0000-0000-00aa-000010001003"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\My Applications.savedquery",
+              "Name": "My Applications.savedquery",
+              "CrmId": "6b858b25-6f44-ea11-a812-000d3a300a53"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\My Connections.savedquery",
+              "Name": "My Connections.savedquery",
+              "CrmId": "ab582fb0-a846-453e-ad88-77f75ce91264"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\My Connections1.savedquery",
+              "Name": "My Connections1.savedquery",
+              "CrmId": "634739a8-d8e5-41bb-b7df-c121bd18e4b4"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\My Contacts Not at Company.savedquery",
+              "Name": "My Contacts Not at Company.savedquery",
+              "CrmId": "1d3a0a34-653a-e911-8185-000d3a070f2c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\My Contacts.savedquery",
+              "Name": "My Contacts.savedquery",
+              "CrmId": "65d2cba8-eeda-4419-b03b-d9c2d8272e51"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\My Cusotm Addresses.savedquery",
+              "Name": "My Cusotm Addresses.savedquery",
+              "CrmId": "28e0ebf5-fc42-ea11-a812-000d3a300a53"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\My Orders.savedquery",
+              "Name": "My Orders.savedquery",
+              "CrmId": "b27707bf-5bad-e411-80d5-00155dbeee13"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\My Outlook Contacts.savedquery",
+              "Name": "My Outlook Contacts.savedquery",
+              "CrmId": "58dc4bee-60b7-4a84-987f-800296b71404"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\My Project Contract Connections.savedquery",
+              "Name": "My Project Contract Connections.savedquery",
+              "CrmId": "078f7ce3-00ea-46a8-a7a5-2777821d70d9"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\My Project Contracts.savedquery",
+              "Name": "My Project Contracts.savedquery",
+              "CrmId": "bc29f750-12a0-4eb5-ac08-698ef528f921"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\My Recent Orders.savedquery",
+              "Name": "My Recent Orders.savedquery",
+              "CrmId": "56f96b82-7bd3-4951-8cbe-23462717dc49"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\My Sales Contracts.savedquery",
+              "Name": "My Sales Contracts.savedquery",
+              "CrmId": "6524bc97-5cad-e411-80d5-00155dbeee13"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\My Service-Maintenance Based Orders.savedquery",
+              "Name": "My Service-Maintenance Based Orders.savedquery",
+              "CrmId": "4d14a410-114d-e711-80cc-02155dc812c3"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Non Canceled Project Contracts.savedquery",
+              "Name": "Non Canceled Project Contracts.savedquery",
+              "CrmId": "ae9da08e-6e13-4f25-be20-5bda67e8b6b1"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Non Cancelled Orders.savedquery",
+              "Name": "Non Cancelled Orders.savedquery",
+              "CrmId": "6428e515-565f-df11-ae90-00155d2e3002"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Order Advanced Find View.savedquery",
+              "Name": "Order Advanced Find View.savedquery",
+              "CrmId": "00000000-0000-0000-00aa-000000666900"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Order Associated View.savedquery",
+              "Name": "Order Associated View.savedquery",
+              "CrmId": "71f7da6e-2772-4097-89d1-3670ff8348bb"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "orderclose",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Order Close Form - Information.d.ts",
+              "Name": "Order Close Form - Information.d.ts",
+              "CrmId": "d654f5c8-9476-4f67-8fdf-284696e5c712"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "orderclose",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Order Close Form - Information.js",
+              "Name": "Order Close Form - Information.js",
+              "CrmId": "d654f5c8-9476-4f67-8fdf-284696e5c712"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "salesorder",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Order Form - Information.d.ts",
+              "Name": "Order Form - Information.d.ts",
+              "CrmId": "22a3f7f7-2709-4bb4-bbca-754475938d68"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "salesorder",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Order Form - Information.js",
+              "Name": "Order Form - Information.js",
+              "CrmId": "22a3f7f7-2709-4bb4-bbca-754475938d68"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "salesorder",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Order Form - Order.d.ts",
+              "Name": "Order Form - Order.d.ts",
+              "CrmId": "d598792c-3ff0-43f3-b3e3-bbd70b99e1a5"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "salesorder",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Order Form - Order.js",
+              "Name": "Order Form - Order.js",
+              "CrmId": "d598792c-3ff0-43f3-b3e3-bbd70b99e1a5"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "salesorderdetail",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Order Line Form - Field Service Information.d.ts",
+              "Name": "Order Line Form - Field Service Information.d.ts",
+              "CrmId": "1b85d96c-5449-4c87-bb96-500150a15faf"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "salesorderdetail",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Order Line Form - Field Service Information.js",
+              "Name": "Order Line Form - Field Service Information.js",
+              "CrmId": "1b85d96c-5449-4c87-bb96-500150a15faf"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "salesorderdetail",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Order Line Form - Information.d.ts",
+              "Name": "Order Line Form - Information.d.ts",
+              "CrmId": "2bb64321-6da0-4a1a-8466-62b40cc6bc7a"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "salesorderdetail",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Order Line Form - Information.js",
+              "Name": "Order Line Form - Information.js",
+              "CrmId": "2bb64321-6da0-4a1a-8466-62b40cc6bc7a"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "salesorderdetail",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Order Line Form - Project Information.d.ts",
+              "Name": "Order Line Form - Project Information.d.ts",
+              "CrmId": "42217573-7275-44b4-8b3e-1030dab05a7e"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "salesorderdetail",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Order Line Form - Project Information.js",
+              "Name": "Order Line Form - Project Information.js",
+              "CrmId": "42217573-7275-44b4-8b3e-1030dab05a7e"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Order Lookup View.savedquery",
+              "Name": "Order Lookup View.savedquery",
+              "CrmId": "abf9e11d-08a5-4f4d-966b-7335a924e9c7"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "orderclose_statecode",
+              "EntityLogicalName": "orderclose",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\orderclose_statecode.d.ts",
+              "Name": "orderclose_statecode.d.ts",
+              "CrmId": "b3348ed1-a64a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "orderclose_statuscode",
+              "EntityLogicalName": "orderclose",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\orderclose_statuscode.d.ts",
+              "Name": "orderclose_statuscode.d.ts",
+              "CrmId": "af348ed1-a64a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Package Type Products.savedquery",
+              "Name": "Package Type Products.savedquery",
+              "CrmId": "a0ec5702-5a4c-ea11-a812-000d3a300a53"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Product (Field Service Product Type is not a Service).savedquery",
+              "Name": "Product (Field Service Product Type is not a Service).savedquery",
+              "CrmId": "3a9d8564-6a47-e111-93b3-000c2959f9b8"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Product Advanced Find View.savedquery",
+              "Name": "Product Advanced Find View.savedquery",
+              "CrmId": "00000000-0000-0000-00aa-000000666a00"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Product Associated View.savedquery",
+              "Name": "Product Associated View.savedquery",
+              "CrmId": "f8de15f4-4c76-4a21-94c9-a38fcafdb73d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Product Bundle Associated View.savedquery",
+              "Name": "Product Bundle Associated View.savedquery",
+              "CrmId": "ebf28110-7cc8-46f9-8d3f-c7d81c60ccc1"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Product Family Lookup View.savedquery",
+              "Name": "Product Family Lookup View.savedquery",
+              "CrmId": "19d7f2e0-e427-40fb-85e8-53e7cef2b166"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "product",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Product Form - Information.d.ts",
+              "Name": "Product Form - Information.d.ts",
+              "CrmId": "42805efb-1f65-4ae8-91bc-618967a55c6e"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "product",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Product Form - Information.js",
+              "Name": "Product Form - Information.js",
+              "CrmId": "42805efb-1f65-4ae8-91bc-618967a55c6e"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "product",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Product Form - Product.d.ts",
+              "Name": "Product Form - Product.d.ts",
+              "CrmId": "a640be62-63f6-4027-90d7-48c014a7c6f3"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "product",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Product Form - Product.js",
+              "Name": "Product Form - Product.js",
+              "CrmId": "a640be62-63f6-4027-90d7-48c014a7c6f3"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "product",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Product Form - Project Information.d.ts",
+              "Name": "Product Form - Project Information.d.ts",
+              "CrmId": "6af59e16-86c9-4ae0-94f3-3d571de2cf23"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptIntellisenseFile, SS.XrmToolkit.Common",
+              "EntityLogicalName": "product",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Product Form - Project Information.js",
+              "Name": "Product Form - Project Information.js",
+              "CrmId": "6af59e16-86c9-4ae0-94f3-3d571de2cf23"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Product Lookup View.savedquery",
+              "Name": "Product Lookup View.savedquery",
+              "CrmId": "8ba625b2-6a2a-4735-bab2-0c74ae8442a4"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Product Suggestions.savedquery",
+              "Name": "Product Suggestions.savedquery",
+              "CrmId": "2ba93c16-e1e3-45cc-a9ae-83d9ec18ff9c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "product_productstructure",
+              "EntityLogicalName": "product",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\product_productstructure.d.ts",
+              "Name": "product_productstructure.d.ts",
+              "CrmId": "68749391-a24a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "product_producttypecode",
+              "EntityLogicalName": "product",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\product_producttypecode.d.ts",
+              "Name": "product_producttypecode.d.ts",
+              "CrmId": "6b749391-a24a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "product_statecode",
+              "EntityLogicalName": "product",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\product_statecode.d.ts",
+              "Name": "product_statecode.d.ts",
+              "CrmId": "72749391-a24a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "product_statuscode",
+              "EntityLogicalName": "product",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\product_statuscode.d.ts",
+              "Name": "product_statuscode.d.ts",
+              "CrmId": "75749391-a24a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Products in Parent Price List.savedquery",
+              "Name": "Products in Parent Price List.savedquery",
+              "CrmId": "bcc509ee-1444-4a95-aed2-128efd85ffd5"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Products With Price List.savedquery",
+              "Name": "Products With Price List.savedquery",
+              "CrmId": "6abca607-018d-4042-a8a7-56a6a1190483"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Products.savedquery",
+              "Name": "Products.savedquery",
+              "CrmId": "9f046f5f-c33e-42c3-b7b7-55fcef5f40ca"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Project Contract Lookup View.savedquery",
+              "Name": "Project Contract Lookup View.savedquery",
+              "CrmId": "92a160a5-c84f-48a9-934f-0fd0544229fb"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "qooi_pricingerrorcode",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\qooi_pricingerrorcode.d.ts",
+              "Name": "qooi_pricingerrorcode.d.ts",
+              "CrmId": "23dad339-9ede-445a-8f63-7b6eec0470a3"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "qooi_skippricecalculation",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\qooi_skippricecalculation.d.ts",
+              "Name": "qooi_skippricecalculation.d.ts",
+              "CrmId": "ab0ed0ef-987c-4b8e-9c57-e426875316a4"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "qooidetail_skippricecalculation",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\qooidetail_skippricecalculation.d.ts",
+              "Name": "qooidetail_skippricecalculation.d.ts",
+              "CrmId": "e6ba48d7-3d05-4500-beb9-492ab44fc71c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "qooiproduct_producttype",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\qooiproduct_producttype.d.ts",
+              "Name": "qooiproduct_producttype.d.ts",
+              "CrmId": "67cdc8b5-1b16-49de-b4f9-e0bf2eb590ce"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "qooiproduct_propertiesconfigurationstatus",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\qooiproduct_propertiesconfigurationstatus.d.ts",
+              "Name": "qooiproduct_propertiesconfigurationstatus.d.ts",
+              "CrmId": "1d8ae382-6415-4671-bc0d-10c1022d4869"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Quick Find Active Applications.savedquery",
+              "Name": "Quick Find Active Applications.savedquery",
+              "CrmId": "c6870afe-b0d6-4c62-a38a-ef99a652d19f"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Quick Find Active Contacts.savedquery",
+              "Name": "Quick Find Active Contacts.savedquery",
+              "CrmId": "8df19b44-a073-40c3-9d6d-ee1355d8c4ba"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Quick Find Active Cusotm Addresses.savedquery",
+              "Name": "Quick Find Active Cusotm Addresses.savedquery",
+              "CrmId": "97b95c61-0eb4-4ac6-8ac7-200a43fa137b"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Quick Find All Orders.savedquery",
+              "Name": "Quick Find All Orders.savedquery",
+              "CrmId": "d26e6749-e832-426b-b4cb-222ab902ce7c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Quick Find All Products.savedquery",
+              "Name": "Quick Find All Products.savedquery",
+              "CrmId": "1aa93c16-e1e3-45cc-a9ae-83d9ec18ff9c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Quick Find Marketing List Members.savedquery",
+              "Name": "Quick Find Marketing List Members.savedquery",
+              "CrmId": "afdb8a51-9681-4cc9-aaa4-29449e5bc9e1"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Retired Product Bundles.savedquery",
+              "Name": "Retired Product Bundles.savedquery",
+              "CrmId": "2f13d083-c17f-46dc-b40e-8a4603c0711c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Retired Products, Families & Bundles.savedquery",
+              "Name": "Retired Products, Families & Bundles.savedquery",
+              "CrmId": "04e73647-b32a-406b-8f81-3017311dac20"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "salesorder_freighttermscode",
+              "EntityLogicalName": "salesorder",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\salesorder_freighttermscode.d.ts",
+              "Name": "salesorder_freighttermscode.d.ts",
+              "CrmId": "a72443e5-a64a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "salesorder_paymenttermscode",
+              "EntityLogicalName": "salesorder",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\salesorder_paymenttermscode.d.ts",
+              "Name": "salesorder_paymenttermscode.d.ts",
+              "CrmId": "ad2443e5-a64a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "salesorder_prioritycode",
+              "EntityLogicalName": "salesorder",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\salesorder_prioritycode.d.ts",
+              "Name": "salesorder_prioritycode.d.ts",
+              "CrmId": "b02443e5-a64a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "salesorder_shippingmethodcode",
+              "EntityLogicalName": "salesorder",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\salesorder_shippingmethodcode.d.ts",
+              "Name": "salesorder_shippingmethodcode.d.ts",
+              "CrmId": "b32443e5-a64a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "salesorder_shipto_freighttermscode",
+              "EntityLogicalName": "salesorder",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\salesorder_shipto_freighttermscode.d.ts",
+              "Name": "salesorder_shipto_freighttermscode.d.ts",
+              "CrmId": "b62443e5-a64a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "salesorder_statecode",
+              "EntityLogicalName": "salesorder",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\salesorder_statecode.d.ts",
+              "Name": "salesorder_statecode.d.ts",
+              "CrmId": "b92443e5-a64a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "salesorder_statuscode",
+              "EntityLogicalName": "salesorder",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\salesorder_statuscode.d.ts",
+              "Name": "salesorder_statuscode.d.ts",
+              "CrmId": "bc2443e5-a64a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "salesorderdetail_salesorderstatecode",
+              "EntityLogicalName": "salesorderdetail",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\salesorderdetail_salesorderstatecode.d.ts",
+              "Name": "salesorderdetail_salesorderstatecode.d.ts",
+              "CrmId": "1a2643e5-a64a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "salesorderdetail_shipto_freighttermscode",
+              "EntityLogicalName": "salesorderdetail",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\salesorderdetail_shipto_freighttermscode.d.ts",
+              "Name": "salesorderdetail_shipto_freighttermscode.d.ts",
+              "CrmId": "1d2643e5-a64a-ea11-a820-000d3a334f1d"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Selected Contacts Campaigns.savedquery",
+              "Name": "Selected Contacts Campaigns.savedquery",
+              "CrmId": "38962192-31ff-46fc-9ac3-2db0a7d9dc7c"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": true,
+              "OptionSetName": "socialprofile_community",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\socialprofile_community.d.ts",
+              "Name": "socialprofile_community.d.ts",
+              "CrmId": "3772b6e4-a49b-4284-8ea6-d563342d26f8"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.SavedQuery, SS.XrmToolkit.Common",
+              "RelativeFilePath": "Views\\Speed Service Products.savedquery",
+              "Name": "Speed Service Products.savedquery",
+              "CrmId": "e075abdd-584c-ea11-a812-000d3a300a53"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "ss_application_ss_applicationtype",
+              "EntityLogicalName": "ss_application",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\ss_application_ss_applicationtype.d.ts",
+              "Name": "ss_application_ss_applicationtype.d.ts",
+              "CrmId": "24570e1b-144d-ea11-a812-000d3a35b8ce"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "ss_application_statecode",
+              "EntityLogicalName": "ss_application",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\ss_application_statecode.d.ts",
+              "Name": "ss_application_statecode.d.ts",
+              "CrmId": "bf560e1b-144d-ea11-a812-000d3a35b8ce"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "ss_application_statuscode",
+              "EntityLogicalName": "ss_application",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\ss_application_statuscode.d.ts",
+              "Name": "ss_application_statuscode.d.ts",
+              "CrmId": "c9560e1b-144d-ea11-a812-000d3a35b8ce"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "ss_apptoorderclassic_statecode",
+              "EntityLogicalName": "ss_apptoorderclassic",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\ss_apptoorderclassic_statecode.d.ts",
+              "Name": "ss_apptoorderclassic_statecode.d.ts",
+              "CrmId": "92bca6cd-d94d-ea11-a812-000d3a35b8ce"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "ss_apptoorderclassic_statuscode",
+              "EntityLogicalName": "ss_apptoorderclassic",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\ss_apptoorderclassic_statuscode.d.ts",
+              "Name": "ss_apptoorderclassic_statuscode.d.ts",
+              "CrmId": "9ebca6cd-d94d-ea11-a812-000d3a35b8ce"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "ss_customaddress_statecode",
+              "EntityLogicalName": "ss_customaddress",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\ss_customaddress_statecode.d.ts",
+              "Name": "ss_customaddress_statecode.d.ts",
+              "CrmId": "dd570e1b-144d-ea11-a812-000d3a35b8ce"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
+              "IsGlobal": false,
+              "OptionSetName": "ss_customaddress_statuscode",
+              "EntityLogicalName": "ss_customaddress",
+              "AutoRefreshOnChanges": true,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\enums\\ss_customaddress_statuscode.d.ts",
+              "Name": "ss_customaddress_statuscode.d.ts",
+              "CrmId": "e7570e1b-144d-ea11-a812-000d3a35b8ce"
+            },
+            {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseCommonFile, SS.XrmToolkit.Common",
+              "AutoRefreshOnChanges": false,
+              "IntellisenseVersion": 6,
+              "RelativeFilePath": "Web\\IntellisenseFiles\\Xrm.d.ts",
+              "Name": "Xrm.d.ts",
+              "CrmId": "00000000-0000-0000-0000-000000000000"
+            }
+          ],
+          "ProjectSettings": {
+            "$type": "SS.XrmToolkit.Common.ApplicationObjects.WebsiteSettings, SS.XrmToolkit.Common"
+          }
+        }
+      ],
+      "OrganizationName": "org416321e2",
+      "OrganizationDisplayName": "Smoothstack",
+      "UserFriendlyName": "corapitrial2",
+      "SelectedSolution": {
+        "UniqueName": "USPS_Customization",
+        "Id": "42e372be-4595-45e2-a51d-df8563c2f623",
+        "LogicalName": "solution",
+        "Name": "USPS_Customization"
+      },
+      "OrganizationPreferences": {
+        "JavaScriptsPath": "\\Web",
+        "TypeScriptsPath": "\\Web",
+        "ImagesPath": "\\Web",
+        "WebFilesPath": "\\Web",
+        "CSSPath": "\\Web",
+        "XslPath": "\\Web",
+        "XmlPath": "\\Web",
+        "SilverlightPath": "\\Xap",
+        "JavaScriptIntellisenseSubDirectoryPath": "\\IntellisenseFiles",
+        "TypeScriptIntellisenseSubDirectoryPath": "\\IntellisenseFiles",
+        "SitemapPath": "\\Sitemap",
+        "ChartsPath": "\\Charts",
+        "ViewPath": "\\Views",
+        "ProxyClassesPath": "\\ProxyClasses",
+        "ProxyEnumClassesPath": "\\Enums",
+        "EmailTemplatesPath": "\\EmailTemplates",
+        "ProcessesPath": "\\Processes",
+        "EntityMetadataPath": "\\EntityMetadata",
+        "PluginConfigurationsPath": "\\PluginConfigurations",
+        "BaseProxyClassRelativePath": "\\",
+        "CustomAssemblyConfigPath": "\\AssemblyConfig",
+        "JavaScriptMinification": 1,
+        "CSSMinification": 1,
+        "AutoRefreshIntellisenseFilesOnMetadataChanges": true,
+        "ResourcesPath": "\\Web",
+        "ServiceContextName": "CrmServiceContext",
+        "EnumsFileName": "OptionSetEnums",
+        "BaseProxyClassFileName": "BaseProxyClass",
+        "AutoRefreshProxyClassesOnMetadataChanges": true,
+        "PluginPath": "",
+        "WorkflowPath": "",
+        "ProxyClassGenerationOptions": 4,
+        "ProxyClassGenerationMethod": 1,
+        "ProxyClassNamingConvention": 1,
+        "ProxyClassNamingPattern": "{0}",
+        "UseStronglyTypeNameForProxyClassRelatedEntities": true
+      }
+    }
+  ]
+}

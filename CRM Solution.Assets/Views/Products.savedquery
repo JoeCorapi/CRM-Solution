@@ -1,0 +1,10 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" output-format="xml-platform" mapping="logical">
+      <entity name="product">
+        <attribute name="productid" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml />
+</view>

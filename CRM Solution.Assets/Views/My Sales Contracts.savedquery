@@ -1,0 +1,37 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+      <entity name="salesorder">
+        <attribute name="name" />
+        <attribute name="totalamount" />
+        <attribute name="statuscode" />
+        <attribute name="customerid" />
+        <attribute name="msdyn_ordertype" />
+        <order attribute="name" descending="false" />
+        <filter type="and">
+          <condition attribute="ownerid" operator="eq-userid" />
+          <condition attribute="statecode" operator="in">
+            <value>0</value>
+            <value>1</value>
+          </condition>
+        </filter>
+        <link-entity name="contact" from="contactid" to="customerid" visible="false" link-type="outer" alias="a_fd53f109387544beb17eab2203f1ae3e">
+          <attribute name="emailaddress1" />
+        </link-entity>
+        <attribute name="salesorderid" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" jump="name" select="1" preview="1" icon="1" object="1088">
+      <row name="result" id="salesorderid">
+        <cell name="name" width="150" />
+        <cell name="statuscode" width="100" />
+        <cell name="totalamount" width="100" />
+        <cell name="msdyn_ordertype" width="100" />
+        <cell name="customerid" width="100" />
+        <cell name="a_fd53f109387544beb17eab2203f1ae3e.emailaddress1" width="100" disableSorting="1" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

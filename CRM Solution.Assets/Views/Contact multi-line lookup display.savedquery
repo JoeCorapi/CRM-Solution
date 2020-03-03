@@ -1,0 +1,20 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" output-format="xml-platform" mapping="logical">
+      <entity name="contact">
+        <attribute name="fullname" />
+        <order attribute="fullname" descending="false" />
+        <attribute name="telephone1" />
+        <attribute name="emailaddress1" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" object="2" jump="fullname" select="1" icon="1" preview="1">
+      <row name="result" id="contactid">
+        <cell name="emailaddress1" width="75" />
+        <cell name="telephone1" width="25" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

@@ -1,0 +1,14 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" mapping="logical" output-format="xml-platform">
+      <entity name="ss_application">
+        <attribute name="ss_applicationid" />
+        <filter type="and">
+          <condition attribute="statecode" operator="eq" value="0" />
+          <condition attribute="ownerid" operator="eq-userid" />
+        </filter>
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml />
+</view>

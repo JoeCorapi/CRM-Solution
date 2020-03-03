@@ -1,0 +1,26 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" output-format="xml-platform" mapping="logical">
+      <entity name="ss_customaddress">
+        <order attribute="ss_line1" descending="false" />
+        <attribute name="ss_state" />
+        <attribute name="ss_postalcode" />
+        <attribute name="ss_line1" />
+        <attribute name="ss_country" />
+        <attribute name="ss_city" />
+        <attribute name="ss_customaddressid" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" object="10381" jump="ss_name" select="1" preview="1" icon="1">
+      <row name="result" id="ss_customaddressid">
+        <cell name="ss_line1" width="100" />
+        <cell name="ss_city" width="100" />
+        <cell name="ss_state" width="100" />
+        <cell name="ss_country" width="100" />
+        <cell name="ss_postalcode" width="100" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

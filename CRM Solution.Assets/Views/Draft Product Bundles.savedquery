@@ -1,0 +1,39 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" output-format="xml-platform" mapping="logical">
+      <entity name="product">
+        <attribute name="name" />
+        <order attribute="hierarchypath" descending="false" />
+        <attribute name="producttypecode" />
+        <attribute name="productnumber" />
+        <filter type="and">
+          <condition attribute="productstructure" operator="eq" value="3" />
+          <filter type="or">
+            <condition attribute="statecode" operator="eq" value="2" />
+            <condition attribute="statecode" operator="eq" value="3" />
+          </filter>
+        </filter>
+        <attribute name="subjectid" />
+        <attribute name="productid" />
+        <attribute name="productstructure" />
+        <attribute name="iskit" />
+        <attribute name="parentproductid" />
+        <attribute name="hierarchypath" />
+        <attribute name="statecode" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" object="1024" jump="name" select="1" icon="1" preview="1">
+      <row name="result" id="productid">
+        <cell name="name" width="200" />
+        <cell name="productnumber" width="100" />
+        <cell name="hierarchypath" width="300" />
+        <cell name="producttypecode" width="150" />
+        <cell name="subjectid" width="100" />
+        <cell name="productstructure" width="0" ishidden="1" />
+        <cell name="statecode" width="0" ishidden="1" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

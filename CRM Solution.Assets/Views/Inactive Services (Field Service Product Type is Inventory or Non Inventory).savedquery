@@ -1,0 +1,25 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+      <entity name="product">
+        <attribute name="name" />
+        <order attribute="name" descending="false" />
+        <filter type="and">
+          <condition attribute="msdyn_fieldserviceproducttype" operator="in">
+            <value>690970001</value>
+            <value>690970000</value>
+          </condition>
+          <condition attribute="statecode" operator="eq" value="1" />
+        </filter>
+        <attribute name="productid" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" jump="name" select="1" preview="1" icon="1" object="1024">
+      <row name="result" id="productid">
+        <cell name="name" width="150" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

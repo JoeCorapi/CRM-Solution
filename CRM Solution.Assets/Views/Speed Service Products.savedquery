@@ -1,0 +1,29 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+      <entity name="product">
+        <attribute name="name" />
+        <attribute name="statecode" />
+        <attribute name="productnumber" />
+        <attribute name="description" />
+        <order attribute="name" descending="false" />
+        <link-entity name="productpricelevel" from="productid" to="productid" alias="aa">
+          <filter type="and">
+            <condition attribute="productnumber" operator="like" value="%SS[_]%" />
+          </filter>
+        </link-entity>
+        <attribute name="productid" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" jump="name" select="1" preview="1" icon="1" object="1024">
+      <row name="result" id="productid">
+        <cell name="name" width="150" />
+        <cell name="description" width="100" disableSorting="1" />
+        <cell name="productnumber" width="100" />
+        <cell name="statecode" width="100" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

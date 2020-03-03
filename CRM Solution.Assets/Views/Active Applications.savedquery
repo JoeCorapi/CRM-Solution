@@ -1,0 +1,27 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" mapping="logical">
+      <entity name="ss_application">
+        <attribute name="ss_name" />
+        <attribute name="createdon" />
+        <order attribute="ss_name" descending="false" />
+        <filter type="and">
+          <condition attribute="statecode" operator="eq" value="0" />
+        </filter>
+        <attribute name="ss_customer" />
+        <attribute name="ss_applicationtype" />
+        <attribute name="ss_applicationid" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" jump="ss_name" select="1" icon="1" preview="1" object="10380">
+      <row name="result" id="ss_applicationid">
+        <cell name="ss_name" width="300" />
+        <cell name="ss_customer" width="100" />
+        <cell name="ss_applicationtype" width="100" />
+        <cell name="createdon" width="125" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

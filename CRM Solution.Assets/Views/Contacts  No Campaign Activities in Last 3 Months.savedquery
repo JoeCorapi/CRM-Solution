@@ -1,0 +1,28 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" output-format="xml-platform" mapping="logical">
+      <entity name="contact">
+        <attribute name="contactid" />
+        <attribute name="fullname" />
+        <attribute name="lastusedincampaign" />
+        <attribute name="telephone1" />
+        <attribute name="address1_city" />
+        <order attribute="fullname" descending="false" />
+        <filter type="or">
+          <condition attribute="lastusedincampaign" operator="olderthan-x-months" value="3" />
+          <condition attribute="lastusedincampaign" operator="null" />
+        </filter>
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" object="2" jump="fullname" select="1" icon="1" preview="1">
+      <row name="result" id="contactid">
+        <cell name="fullname" width="300" />
+        <cell name="lastusedincampaign" width="150" />
+        <cell name="telephone1" width="100" />
+        <cell name="address1_city" width="100" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

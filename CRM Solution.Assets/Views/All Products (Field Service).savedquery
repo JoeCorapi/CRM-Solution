@@ -1,0 +1,27 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+      <entity name="product">
+        <attribute name="name" />
+        <attribute name="productnumber" />
+        <attribute name="msdyn_fieldserviceproducttype" />
+        <attribute name="statuscode" />
+        <order attribute="name" descending="false" />
+        <filter type="and">
+          <condition attribute="msdyn_fieldserviceproducttype" operator="not-null" />
+        </filter>
+        <attribute name="productid" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" jump="name" select="1" preview="1" icon="1" object="1024">
+      <row name="result" id="productid">
+        <cell name="name" width="150" />
+        <cell name="productnumber" width="100" />
+        <cell name="msdyn_fieldserviceproducttype" width="100" />
+        <cell name="statuscode" width="100" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

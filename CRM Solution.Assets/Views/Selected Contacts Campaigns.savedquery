@@ -1,0 +1,26 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+      <entity name="contact">
+        <attribute name="fullname" />
+        <order attribute="fullname" descending="false" />
+        <attribute name="telephone1" />
+        <link-entity name="bulkoperationlog" from="regardingobjectid" to="contactid" alias="Logs">
+          <filter>
+            <condition attribute="errornumber" operator="eq" value="0" />
+            <condition attribute="errornumber" operator="not-null" />
+          </filter>
+        </link-entity>
+        <attribute name="contactid" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="resultset" jump="fullname" select="1" preview="1" icon="1" object="2">
+      <row name="result" id="contactid">
+        <cell name="fullname" width="150" />
+        <cell name="telephone1" width="100" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>

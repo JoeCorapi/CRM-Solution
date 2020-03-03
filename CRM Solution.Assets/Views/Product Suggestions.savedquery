@@ -1,0 +1,22 @@
+﻿<view>
+  <fetchxml>
+    <fetch version="1.0" mapping="logical">
+      <entity name="product">
+        <attribute name="productid" />
+        <attribute name="defaultuomid" />
+        <order attribute="productid" descending="false" />
+        <filter type="and">
+          <condition attribute="productstructure" operator="ne" value="2" />
+        </filter>
+      </entity>
+    </fetch>
+  </fetchxml>
+  <layoutxml>
+    <grid name="products" object="1024" jump="" select="1" icon="1" preview="1">
+      <row name="product" id="productid" layoutstyle="ProductSuggestions">
+        <cell name="name" width="220" />
+        <cell name="defaultuomid" width="150" />
+      </row>
+    </grid>
+  </layoutxml>
+</view>
