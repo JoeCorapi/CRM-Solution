@@ -10,7 +10,7 @@ function destinationIsNotOrigin(executionContext) {
     destinationAddress = destinationId.replace("}", "").replace("{", "");
 
 
-    if (formContext.getAttribute("ss_customer") !== null && formContext.getAttribute("ss_customer").getValue() != null && formContext.getAttribute("ss_customer").getValue()[0].id != null)
+    if (formContext.getAttribute("ss_customer") !== null && formContext.getAttribute("ss_customer").getValue() !== null && formContext.getAttribute("ss_customer").getValue()[0].id !== null)
         customerId = formContext.getAttribute("ss_customer").getValue()[0].id;
     if (customerId !== null) {
         let req = new XMLHttpRequest();
@@ -30,7 +30,10 @@ function destinationIsNotOrigin(executionContext) {
                     let _ss_contactcustomaddress_value_lookuplogicalname = result["_ss_contactcustomaddress_value@Microsoft.Dynamics.CRM.lookuplogicalname"];
 
                     if (destinationAddress.toLowerCase() === _ss_contactcustomaddress_value.toLowerCase()) {
-                        alert("The destination address cannot be the same as the origin.");
+                       // alert("The destination address cannot be the same as the origin.");
+                        //alert(executionContext.getEventArgs().getSaveMode());
+                        executionContext.getEventArgs().preventDefault();
+                        alert(executionContext.getEventArgs().isDefaultPrevented());
                     }
 
                 } else {
