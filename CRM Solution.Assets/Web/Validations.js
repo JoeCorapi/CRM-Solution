@@ -6,12 +6,11 @@ function destinationIsNotOrigin(executionContext) {
     let globalContext = Xrm.Utility.getGlobalContext();
     let clientUrl = globalContext.getClientUrl();
 
-    destinationId = formContext.getAttribute("ss_destinationaddress").getValue()[0].id;
-    destinationAddress = destinationId.replace("}", "").replace("{", "");
-
+    let destinationId = formContext.getAttribute("ss_destinationaddress").getValue()[0].id;
+    let destinationAddress = destinationId.replace("}", "").replace("{", "");
 
     if (formContext.getAttribute("ss_customer") !== null && formContext.getAttribute("ss_customer").getValue() !== null && formContext.getAttribute("ss_customer").getValue()[0].id !== null)
-        customerId = formContext.getAttribute("ss_customer").getValue()[0].id;
+        var customerId = formContext.getAttribute("ss_customer").getValue()[0].id;
     if (customerId !== null) {
         let req = new XMLHttpRequest();
         req.open("GET", clientUrl + "/api/data/v9.1/contacts(" + customerId.replace("}", "").replace("{", "") + ")?$select=_ss_contactcustomaddress_value", true);
@@ -30,10 +29,11 @@ function destinationIsNotOrigin(executionContext) {
                     let _ss_contactcustomaddress_value_lookuplogicalname = result["_ss_contactcustomaddress_value@Microsoft.Dynamics.CRM.lookuplogicalname"];
 
                     if (destinationAddress.toLowerCase() === _ss_contactcustomaddress_value.toLowerCase()) {
-                       // alert("The destination address cannot be the same as the origin.");
+                        alert("The destination address cannot be the same as the origin.");
                         //alert(executionContext.getEventArgs().getSaveMode());
+                        formContext.getAttribute("ss_destinationaddress").setValue(null);
                         executionContext.getEventArgs().preventDefault();
-                        alert(executionContext.getEventArgs().isDefaultPrevented());
+                        //alert(executionContext.getEventArgs().isDefaultPrevented());
                     }
 
                 } else {
