@@ -84,6 +84,7 @@
     <Content Include="Web\IntellisenseFiles\Product Form - Information.js" />
     <Content Include="Web\IntellisenseFiles\Product Form - Product.js" />
     <Content Include="Web\IntellisenseFiles\Product Form - Project Information.js" />
+    <Content Include="Web\Validations.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
