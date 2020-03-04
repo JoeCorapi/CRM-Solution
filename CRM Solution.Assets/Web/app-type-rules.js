@@ -1,21 +1,22 @@
-﻿function crmAlert(context) {
+﻿function displayProductFields(context) {
 
     let formContext = context.getFormContext();
     let applicationType = formContext.getAttribute("ss_applicationtype").getValue();
 
-    function hideFields() {
-        formContext.ui.tabs.sections.controls.get("Package Contents").setVisible(false);
+    function displayFields(boolean) {
+        formContext.getControl("ss_itemcontents").setVisible(boolean);
+        formContext.getControl("ss_packageheight").setVisible(boolean);
+        formContext.getControl("ss_packagelength").setVisible(boolean);
+        formContext.getControl("ss_packagewidth").setVisible(boolean);
+        formContext.getControl("ss_packageweight").setVisible(boolean);
+        formContext.getControl("ss_packagevolume").setVisible(boolean);
+        formContext.getControl("ss_shippingspeed").setVisible(boolean);
+        formContext.getControl("ss_estimateddeliverydate").setVisible(boolean);
     }
 
-    function showFields() {
-        formContext.ui.tabs.sections.controls.get("Package Contents").setVisible(true);
-    }
-
-    if (applicationType === 717800002) {
-        hideFields;
+    if (applicationType === 717800002) { // type = Submit package
+        displayFields(true);
     } else {
-        showFields;
+        displayFields(false);
     }
-
-    alert(applicationType);
 }

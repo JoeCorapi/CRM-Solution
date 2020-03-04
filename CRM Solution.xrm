@@ -1924,6 +1924,16 @@
               "CrmId": "e7570e1b-144d-ea11-a812-000d3a35b8ce"
             },
             {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptFile, SS.XrmToolkit.Common",
+              "GulpTaskName": "",
+              "GulpOutputFile": "Validations.js",
+              "ForceExecutionOfGulpTaskOnBulkUpdate": false,
+              "MinifyMode": 1,
+              "RelativeFilePath": "Web\\Validations.js",
+              "Name": "Validations.js",
+              "CrmId": "64f1bb5e-aa5d-ea11-a811-000d3a35b480"
+            },
+            {
               "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptIntellisenseCommonFile, SS.XrmToolkit.Common",
               "AutoRefreshOnChanges": false,
               "IntellisenseVersion": 6,
