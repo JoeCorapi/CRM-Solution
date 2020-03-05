@@ -3,8 +3,14 @@
     let formContext = context.getFormContext();
     let applicationType = formContext.getAttribute("ss_applicationtype").getValue();
 
-    let fields = ["ss_itemcontents", "ss_packageheight", "ss_packagelength",
-        "ss_packagewidth", "ss_packageweight", "ss_packagevolume", "ss_shippingspeed",
+    let fields = [
+        "ss_itemcontents",
+        "ss_packageheight",
+        "ss_packagelength",
+        "ss_packagewidth",
+        "ss_packageweight",
+        "ss_packagevolume",
+        "ss_shippingspeed",
         "ss_estimateddeliverydate"];
 
     function displayFields(field, boolean) {
