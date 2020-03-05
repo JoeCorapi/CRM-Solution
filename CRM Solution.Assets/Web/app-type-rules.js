@@ -3,20 +3,17 @@
     let formContext = context.getFormContext();
     let applicationType = formContext.getAttribute("ss_applicationtype").getValue();
 
-    function displayFields(boolean) {
-        formContext.getControl("ss_itemcontents").setVisible(boolean);
-        formContext.getControl("ss_packageheight").setVisible(boolean);
-        formContext.getControl("ss_packagelength").setVisible(boolean);
-        formContext.getControl("ss_packagewidth").setVisible(boolean);
-        formContext.getControl("ss_packageweight").setVisible(boolean);
-        formContext.getControl("ss_packagevolume").setVisible(boolean);
-        formContext.getControl("ss_shippingspeed").setVisible(boolean);
-        formContext.getControl("ss_estimateddeliverydate").setVisible(boolean);
+    let fields = ["ss_itemcontents", "ss_packageheight", "ss_packagelength",
+        "ss_packagewidth", "ss_packageweight", "ss_packagevolume", "ss_shippingspeed",
+        "ss_estimateddeliverydate"];
+
+    function displayFields(field, boolean) {
+        formContext.getControl(field).setVisible(boolean);
     }
 
     if (applicationType === 717800002) { // type = Submit package
-        displayFields(true);
+        fields.forEach(value => displayFields(value, true));
     } else {
-        displayFields(false);
+        fields.forEach(value => displayFields(value, false));
     }
 }
