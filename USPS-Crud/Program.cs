@@ -15,50 +15,76 @@ namespace USPSCrud
         static CrmServiceClient svc = new CrmServiceClient(strConnectionString);
         static void Main(string[] args)
         {
-            //  CreateAccount();
-            RetrieveMultipleAccounts();
-            // UpdateAccount();
+            // CreateApplication();
+            RetrieveApplication();
+            // RetrieveMultipleApplications();
+            // UpdateApplication();
             Console.Read();
         }
-        public static void CreateAccount()
+        public static void CreateApplication()
         {
-            Entity entAccount = new Entity("account");
-            entAccount.Attributes["name"] = "Smoothstakaccount 1234";
-            svc.Create(entAccount);
+            Entity eApplication = new Entity("ss_application");
+            eApplication.Attributes["ss_name"] = "CRUD App";
+            svc.Create(eApplication);
         }
-        public static void UpdateAccount()
+
+        public static void UpdateApplication()
         {
-            Entity entAccount = new Entity("account");
-            entAccount.Id = new Guid("Smoothstakaccount 123");
-            entAccount.Attributes["name"] = "updateSmoothstakaccount 123";
-            svc.Update(entAccount);
+            Entity eApplication = new Entity("Application");
+            eApplication.Id = new Guid("SmoothstakApplication 123");
+            eApplication.Attributes["name"] = "updateSmoothstakApplication 123";
+            svc.Update(eApplication);
         }
-        public static void DeleteAccount()
+
+        public static void DeleteApplication()
         {
-            svc.Delete("account", new Guid());
+            svc.Delete("Application", new Guid());
         }
-        public static void RetrieveAccount()
+
+        public static Entity RetrieveApplication()
         {
-            svc.Retrieve("account", new Guid(), new Microsoft.Xrm.Sdk.Query.ColumnSet(new string[] { "name" }));
+            ConditionExpression condition1 = new ConditionExpression();
+            condition1.AttributeName = "ss_name";
+            condition1.Operator = ConditionOperator.Equal;
+            condition1.Values.Add("Action Test");
+
+            FilterExpression filter1 = new FilterExpression();
+            filter1.Conditions.Add(condition1);
+
+            QueryExpression query = new QueryExpression("ss_application");
+            query.ColumnSet.AddColumns("ss_name", "ss_customer", "ss_applicationtype");
+            query.Criteria.AddFilter(filter1);
+
+            EntityCollection result1 = svc.RetrieveMultiple(query);
+            Console.WriteLine(); Console.WriteLine("Query using Query Expression with ConditionExpression and FilterExpression");
+            Console.WriteLine("---------------------------------------");
+            foreach (var a in result1.Entities)
+            {
+                Console.WriteLine("Name: " + a.Attributes["ss_name"] + " App Type: " + a.FormattedValues["ss_applicationtype"].ToString());
+                return a;
+            }
+
+            return null;
         }
-        public static void RetrieveMultipleAccounts()
+
+        public static void RetrieveMultipleApplications()
         {
             string strFetchXML = @"<fetch distinct='false' mapping='logical' output-format='xml-platform' version='1.0'>
-                                        <entity name='account'>
+                                        <entity name='Application'>
                                             <attribute name='name'/>
                                             <attribute name='primarycontactid'/>
                                             <attribute name='telephone1'/>
-                                            <attribute name='accountid'/>
+                                            <attribute name='Applicationid'/>
                                                 <order descending='false' attribute='name'/>
                                             <filter type='and'>
                                                 <condition attribute='createdon' operator='today'/>
                                             </filter>
                                         </entity>
                                     </fetch>";
-            EntityCollection entAccountCollection = svc.RetrieveMultiple(new FetchExpression(strFetchXML));
-            for (int intCount = 0; intCount < entAccountCollection.Entities.Count; intCount++)
+            EntityCollection entApplicationCollection = svc.RetrieveMultiple(new FetchExpression(strFetchXML));
+            for (int intCount = 0; intCount < entApplicationCollection.Entities.Count; intCount++)
             {
-                Console.WriteLine("Name of the Account : " + entAccountCollection.Entities[intCount].Attributes["name"].ToString());
+                Console.WriteLine("Name of the Application : " + entApplicationCollection.Entities[intCount].Attributes["name"].ToString());
             }
         }
     }

@@ -1,0 +1,6 @@
+C:\Users\Me\source\repos\CRM-Solution\CRM Solution.Assets\bin\CRM Solution.Assets.dll.config
+C:\Users\Me\source\repos\CRM-Solution\CRM Solution.Assets\bin\CRM Solution.Assets.dll
+C:\Users\Me\source\repos\CRM-Solution\CRM Solution.Assets\bin\CRM Solution.Assets.pdb
+C:\Users\Me\source\repos\CRM-Solution\CRM Solution.Assets\obj\Debug\CRM Solution.Assets.csprojAssemblyReference.cache
+C:\Users\Me\source\repos\CRM-Solution\CRM Solution.Assets\obj\Debug\CRM Solution.Assets.dll
+C:\Users\Me\source\repos\CRM-Solution\CRM Solution.Assets\obj\Debug\CRM Solution.Assets.pdb
