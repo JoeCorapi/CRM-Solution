@@ -1,0 +1,56 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Ubnik\\source\\repos\\CRM-Solution\\USPS-Crud\\USPSCrud.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ubnik\\source\\repos\\CRM-Solution\\USPS-Crud\\USPSCrud.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ubnik\\source\\repos\\CRM-Solution\\USPS-Crud\\USPSCrud.csproj",
+        "projectName": "USPSCrud",
+        "projectPath": "C:\\Users\\Ubnik\\source\\repos\\CRM-Solution\\USPS-Crud\\USPSCrud.csproj",
+        "packagesPath": "C:\\Users\\Ubnik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ubnik\\source\\repos\\CRM-Solution\\USPS-Crud\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ubnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.CrmSdk.XrmTooling.CoreAssembly": {
+              "target": "Package",
+              "version": "[9.1.0.38, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

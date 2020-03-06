@@ -1,0 +1,5 @@
+C:\Users\Ubnik\source\repos\CRM-Solution\USPS-Crud\bin\Debug\net472\USPS-Crud.exe.config
+C:\Users\Ubnik\source\repos\CRM-Solution\USPS-Crud\bin\Debug\net472\USPS-Crud.exe
+C:\Users\Ubnik\source\repos\CRM-Solution\USPS-Crud\obj\Debug\net472\USPS-Crud.csprojAssemblyReference.cache
+C:\Users\Ubnik\source\repos\CRM-Solution\USPS-Crud\obj\Debug\net472\USPS-Crud.AssemblyInfoInputs.cache
+C:\Users\Ubnik\source\repos\CRM-Solution\USPS-Crud\obj\Debug\net472\USPS-Crud.AssemblyInfo.cs
