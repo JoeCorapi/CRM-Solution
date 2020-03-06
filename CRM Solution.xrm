@@ -1726,6 +1726,16 @@
               "CrmId": "04e73647-b32a-406b-8f81-3017311dac20"
             },
             {
+              "$type": "SS.XrmToolkit.Common.ApplicationObjects.JavaScriptFile, SS.XrmToolkit.Common",
+              "GulpTaskName": "",
+              "GulpOutputFile": "Ribbons.js",
+              "ForceExecutionOfGulpTaskOnBulkUpdate": false,
+              "MinifyMode": 1,
+              "RelativeFilePath": "Web\\Ribbons.js",
+              "Name": "Ribbons.js",
+              "CrmId": "096ce31a-315f-ea11-a811-000d3a35b480"
+            },
+            {
               "$type": "SS.XrmToolkit.Common.ApplicationObjects.TypeScriptEnumIntellisenseFile, SS.XrmToolkit.Common",
               "IsGlobal": false,
               "OptionSetName": "salesorder_freighttermscode",
