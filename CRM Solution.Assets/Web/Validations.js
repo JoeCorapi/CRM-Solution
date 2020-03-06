@@ -34,6 +34,8 @@ function destinationIsNotOrigin(executionContext) {
                         formContext.getAttribute("ss_destinationaddress").setValue(null);
                         executionContext.getEventArgs().preventDefault();
                         //alert(executionContext.getEventArgs().isDefaultPrevented());
+                    } else {
+                        formContext.ui.clearFormNotification("destNotOriginErr");
                     }
 
                 } else {
