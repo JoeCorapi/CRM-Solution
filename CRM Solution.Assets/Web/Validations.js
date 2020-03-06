@@ -29,7 +29,7 @@ function destinationIsNotOrigin(executionContext) {
                     let _ss_contactcustomaddress_value_lookuplogicalname = result["_ss_contactcustomaddress_value@Microsoft.Dynamics.CRM.lookuplogicalname"];
 
                     if (destinationAddress.toLowerCase() === _ss_contactcustomaddress_value.toLowerCase()) {
-                        alert("The destination address cannot be the same as the origin.");
+                        formContext.ui.setFormNotification("The destination address cannot be the same as the origin.", "ERROR", "destNotOriginErr");
                         //alert(executionContext.getEventArgs().getSaveMode());
                         formContext.getAttribute("ss_destinationaddress").setValue(null);
                         executionContext.getEventArgs().preventDefault();
