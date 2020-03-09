@@ -406,19 +406,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ubnik\\.nuget\\packages\\": {}
+    "C:\\Users\\Me\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ubnik\\source\\repos\\CRM-Solution\\USPS-Crud\\USPSCrud.csproj",
+      "projectUniqueName": "C:\\Users\\Me\\source\\repos\\CRM-Solution\\USPS-Crud\\USPSCrud.csproj",
       "projectName": "USPSCrud",
-      "projectPath": "C:\\Users\\Ubnik\\source\\repos\\CRM-Solution\\USPS-Crud\\USPSCrud.csproj",
-      "packagesPath": "C:\\Users\\Ubnik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ubnik\\source\\repos\\CRM-Solution\\USPS-Crud\\obj\\",
+      "projectPath": "C:\\Users\\Me\\source\\repos\\CRM-Solution\\USPS-Crud\\USPSCrud.csproj",
+      "packagesPath": "C:\\Users\\Me\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Me\\source\\repos\\CRM-Solution\\USPS-Crud\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ubnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Me\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

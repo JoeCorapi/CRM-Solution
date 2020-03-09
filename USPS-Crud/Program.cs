@@ -20,17 +20,22 @@ namespace USPSCrud
         static CrmServiceClient svc = new CrmServiceClient(strConnectionString);
         static void Main(string[] args)
         {
-            string filePath = filePath = @"C:\Users\Ubnik\Desktop\Active Applications 1-31-2020 5-29-51 PM.csv";
+            string desktopPath = @"C:\Users\Ubnik\Desktop\Active Applications 1 - 31 - 2020 5 - 29 - 51 PM.csv";
+            string laptopPath = @"C:\Users\Me\Desktop\uspsCSVdata.csv";
+            string filePath = laptopPath;
 
-            importCSVData(filePath);
-            //CreateApplication("c test", "Cliff Didcock", "Package Submission");
+            Entity app = RetrieveApplication("CSV Import");
+            UpdateApplication(app, "CSV Update", "Cliff Didcock", "Mail Forwarding");
+
+            // ImportCSVData(filePath);
+            // CreateApplication("c test", "Cliff Didcock", "Package Submission");
             // RetrieveApplication();
             // RetrieveMultipleApplications();
             // UpdateApplication();
             Console.Read();
         }
 
-        public static void importCSVData(String filePath)
+        public static void ImportCSVData(string filePath)
         {
             try
             {
@@ -46,10 +51,10 @@ namespace USPSCrud
                     Console.WriteLine(file.Length);
                     var record = file[row].Replace('\r', ' ').Split(',');
 
-                    string appName = record[3];
-                    string appCustomer = record[4];
-                    string appType = record[5];
-                    string appDate = record[6];
+                    string appName = record[0];
+                    string appCustomer = record[1];
+                    string appType = record[2];
+                    string appDate = record[3];
 
                     Console.WriteLine(appName + ", " + appCustomer + ", " + appType + ", " + appDate);
                     CreateApplication(appName, appCustomer, appType);
@@ -61,39 +66,46 @@ namespace USPSCrud
                 Console.WriteLine(e.Message);
             }
         }
-        public static void CreateApplication(string appName, string appCustomer, string appType)
+
+        public static OptionSetValue GetAppTypeValue(string appTypeLabel)
         {
             int appTypeValue;
             // Address Change     = 717800000
             // Mail Forwarding    = 717800001
             // Package Submission = 717800002
 
-            if (appType.Equals("Address Change"))
+            if (appTypeLabel.Equals("Address Change"))
             {
                 appTypeValue = 717800000;
-            } else if (appType.Equals("Mail Forwarding"))
+            } else if (appTypeLabel.Equals("Mail Forwarding"))
             {
                 appTypeValue = 717800001;
-            } else if (appType.Equals("Package Submission"))
+            } else if (appTypeLabel.Equals("Package Submission"))
             {
                 appTypeValue = 717800002;
             } else
             {
                 throw new Exception("Invalid app type value");
             }
-
+            return new OptionSetValue(appTypeValue);
+        }
+        public static void CreateApplication(string appName, string appCustomer, string appTypeLabel)
+        {
             Entity eApplication = new Entity("ss_application");
             eApplication.Attributes["ss_name"] = appName;
             //eApplication.Attributes["ss_customer"] = appCustomer;
-            eApplication.Attributes["ss_applicationtype"] = new OptionSetValue(appTypeValue);
+            eApplication.Attributes["ss_applicationtype"] = GetAppTypeValue(appTypeLabel);
 
             svc.Create(eApplication);
         }
 
-        public static void UpdateApplication(Entity application, string appName, string appCustomer, string appType)
-        {
-            application.Id = new Guid("SmoothstakApplication");
-            application.Attributes["name"] = "updateSmoothstakApplication";
+        public static void UpdateApplication(Entity application, string appName, string appCustomer, string appTypeLabel)
+        { 
+            application.Attributes["ss_name"] = appName;
+            //application.Attributes["ss_customer"] = appCustomer;
+            application.Attributes["ss_applicationtype"] = GetAppTypeValue(appTypeLabel);
+            //application.Attributes["ss_createdon"] = "updateSmoothstakApplication";
+
             svc.Update(application);
         }
 
