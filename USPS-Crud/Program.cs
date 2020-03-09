@@ -7,6 +7,10 @@ using Microsoft.Xrm.Tooling.Connector;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
 
+/// <summary>
+/// Customer should not be linked to an applicaiton as a lookup. AppName, Destination, And AppType are the requried fields.
+/// </summary>
+
 namespace USPSCrud
 {
     class crmCrud
@@ -15,38 +19,64 @@ namespace USPSCrud
         static CrmServiceClient svc = new CrmServiceClient(strConnectionString);
         static void Main(string[] args)
         {
-            // CreateApplication();
-            RetrieveApplication();
+            CreateApplication("c test", "Cliff Didcock", "Package Submission");
+            // RetrieveApplication();
             // RetrieveMultipleApplications();
             // UpdateApplication();
             Console.Read();
         }
-        public static void CreateApplication()
+
+        public static void importCSVData(String filePath)
         {
+            String filePath = 
+        }
+        public static void CreateApplication(String appName, String appCustomer, String appType)
+        {
+            int appTypeValue;
+            // Address Change     = 717800000
+            // Mail Forwarding    = 717800001
+            // Package Submission = 717800002
+
+            if (appType.Equals("Address Change"))
+            {
+                appTypeValue = 717800000;
+            } else if (appType.Equals("Mail Forwarding"))
+            {
+                appTypeValue = 717800001;
+            } else if (appType.Equals("Package Submission"))
+            {
+                appTypeValue = 717800002;
+            } else
+            {
+                throw new Exception("Invalid app type value");
+            }
+
             Entity eApplication = new Entity("ss_application");
-            eApplication.Attributes["ss_name"] = "CRUD App";
+            eApplication.Attributes["ss_name"] = appName;
+            //eApplication.Attributes["ss_customer"] = appCustomer;
+            eApplication.Attributes["ss_applicationtype"] = new OptionSetValue(appTypeValue);
+
             svc.Create(eApplication);
         }
 
-        public static void UpdateApplication()
+        public static void UpdateApplication(Entity application, String appName, String appCustomer, String appType)
         {
-            Entity eApplication = new Entity("Application");
-            eApplication.Id = new Guid("SmoothstakApplication 123");
-            eApplication.Attributes["name"] = "updateSmoothstakApplication 123";
-            svc.Update(eApplication);
+            application.Id = new Guid("SmoothstakApplication");
+            application.Attributes["name"] = "updateSmoothstakApplication";
+            svc.Update(application);
         }
 
-        public static void DeleteApplication()
+        public static void DeleteApplication(Guid guid)
         {
-            svc.Delete("Application", new Guid());
+            svc.Delete("ss_application", guid);
         }
 
-        public static Entity RetrieveApplication()
+        public static Entity RetrieveApplication(String applicationName)
         {
             ConditionExpression condition1 = new ConditionExpression();
             condition1.AttributeName = "ss_name";
             condition1.Operator = ConditionOperator.Equal;
-            condition1.Values.Add("Action Test");
+            condition1.Values.Add(applicationName);
 
             FilterExpression filter1 = new FilterExpression();
             filter1.Conditions.Add(condition1);
@@ -58,10 +88,12 @@ namespace USPSCrud
             EntityCollection result1 = svc.RetrieveMultiple(query);
             Console.WriteLine(); Console.WriteLine("Query using Query Expression with ConditionExpression and FilterExpression");
             Console.WriteLine("---------------------------------------");
-            foreach (var a in result1.Entities)
+
+            if (result1.Entities.Count > 0)
             {
-                Console.WriteLine("Name: " + a.Attributes["ss_name"] + " App Type: " + a.FormattedValues["ss_applicationtype"].ToString());
-                return a;
+                var record = result1.Entities[0];
+                Console.WriteLine("Name: " + record.Attributes["ss_name"] + " App Type: " + record.FormattedValues["ss_applicationtype"].ToString());
+                return record;
             }
 
             return null;
@@ -86,6 +118,11 @@ namespace USPSCrud
             {
                 Console.WriteLine("Name of the Application : " + entApplicationCollection.Entities[intCount].Attributes["name"].ToString());
             }
+        }
+
+        public static void ImportCSVData()
+        {
+
         }
     }
 }
