@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,10 @@ namespace USPSCrud
         static CrmServiceClient svc = new CrmServiceClient(strConnectionString);
         static void Main(string[] args)
         {
-            CreateApplication("c test", "Cliff Didcock", "Package Submission");
+            string filePath = filePath = @"C:\Users\Ubnik\Desktop\Active Applications 1-31-2020 5-29-51 PM.csv";
+
+            importCSVData(filePath);
+            //CreateApplication("c test", "Cliff Didcock", "Package Submission");
             // RetrieveApplication();
             // RetrieveMultipleApplications();
             // UpdateApplication();
@@ -28,9 +32,36 @@ namespace USPSCrud
 
         public static void importCSVData(String filePath)
         {
-            String filePath = 
+            try
+            {
+                string csvData = File.ReadAllText(filePath);
+                var file = csvData.Split('\n');
+                
+                //int app = 0;
+                //int veh = 0;
+                //int cont = 0;
+
+                for (int row = 1; row <= file.Length - 1; row++)
+                {
+                    Console.WriteLine(file.Length);
+                    var record = file[row].Replace('\r', ' ').Split(',');
+
+                    string appName = record[3];
+                    string appCustomer = record[4];
+                    string appType = record[5];
+                    string appDate = record[6];
+
+                    Console.WriteLine(appName + ", " + appCustomer + ", " + appType + ", " + appDate);
+                    CreateApplication(appName, appCustomer, appType);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Unable to access file data");
+                Console.WriteLine(e.Message);
+            }
         }
-        public static void CreateApplication(String appName, String appCustomer, String appType)
+        public static void CreateApplication(string appName, string appCustomer, string appType)
         {
             int appTypeValue;
             // Address Change     = 717800000
@@ -59,7 +90,7 @@ namespace USPSCrud
             svc.Create(eApplication);
         }
 
-        public static void UpdateApplication(Entity application, String appName, String appCustomer, String appType)
+        public static void UpdateApplication(Entity application, string appName, string appCustomer, string appType)
         {
             application.Id = new Guid("SmoothstakApplication");
             application.Attributes["name"] = "updateSmoothstakApplication";
