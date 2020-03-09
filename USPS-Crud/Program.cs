@@ -24,7 +24,7 @@ namespace USPSCrud
             string laptopPath = @"C:\Users\Me\Desktop\uspsCSVdata.csv";
             string filePath = laptopPath;
 
-            Entity app = RetrieveApplication("CSV Import");
+            Entity app = RetrieveApplication("ss_application", "ss_name", "CSV Import", ["ss_name", "ss_applicationtype", "createdon"]);
             UpdateApplication(app, "CSV Update", "Cliff Didcock", "Mail Forwarding");
 
             // ImportCSVData(filePath);
@@ -41,7 +41,7 @@ namespace USPSCrud
             {
                 string csvData = File.ReadAllText(filePath);
                 var file = csvData.Split('\n');
-                
+
                 //int app = 0;
                 //int veh = 0;
                 //int cont = 0;
@@ -51,6 +51,12 @@ namespace USPSCrud
                     Console.WriteLine(file.Length);
                     var record = file[row].Replace('\r', ' ').Split(',');
 
+                    var keyValues = new Dictionary<String, String>()
+                    {
+                        {String appName: record[0]},
+
+                    }
+                    keyValues.Add()
                     string appName = record[0];
                     string appCustomer = record[1];
                     string appType = record[2];
@@ -114,18 +120,26 @@ namespace USPSCrud
             svc.Delete("ss_application", guid);
         }
 
-        public static Entity RetrieveApplication(String applicationName)
+        public static QueryExpression QueryBuilder(string entityName, string[] columns)
         {
-            ConditionExpression condition1 = new ConditionExpression();
-            condition1.AttributeName = "ss_name";
-            condition1.Operator = ConditionOperator.Equal;
-            condition1.Values.Add(applicationName);
+            QueryExpression query = new QueryExpression(entityName);
+            query.ColumnSet.AddColumns(columns);
+
+            return query;
+        }
+        public static Entity RetrieveApplication(string entityName, string keyField, string keyValue, string[] columns)
+        {
+            ConditionExpression condition1 = new ConditionExpression
+            {
+                AttributeName = keyField,
+                Operator = ConditionOperator.Equal
+        };
+            condition1.Values.Add(keyValue);
 
             FilterExpression filter1 = new FilterExpression();
             filter1.Conditions.Add(condition1);
 
-            QueryExpression query = new QueryExpression("ss_application");
-            query.ColumnSet.AddColumns("ss_name", "ss_customer", "ss_applicationtype");
+            QueryExpression query = QueryBuilder(entityName, columns);
             query.Criteria.AddFilter(filter1);
 
             EntityCollection result1 = svc.RetrieveMultiple(query);
