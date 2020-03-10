@@ -20,50 +20,46 @@ namespace USPSCrud
         static CrmServiceClient svc = new CrmServiceClient(strConnectionString);
         static void Main(string[] args)
         {
-            string desktopPath = @"C:\Users\Ubnik\Desktop\Active Applications 1 - 31 - 2020 5 - 29 - 51 PM.csv";
-            string laptopPath = @"C:\Users\Me\Desktop\uspsCSVdata.csv";
-            string filePath = laptopPath;
+            const string desktopPath = @"C:\Users\Ubnik\Desktop\Active Applications 1 - 31 - 2020 5 - 29 - 51 PM.csv";
+            const string laptopPath = @"C:\Users\Me\Desktop\simple.csv"; //uspsCSVdata.csv
+            const string filePath = laptopPath;
+            const string entityName = "ss_application";
+            string[] fieldLabels = new string[]{"ss_name", "ss_applicationtype", "ss_destinationaddress"};
 
-            Entity app = RetrieveApplication("ss_application", "ss_name", "CSV Import", ["ss_name", "ss_applicationtype", "createdon"]);
-            UpdateApplication(app, "CSV Update", "Cliff Didcock", "Mail Forwarding");
+            //Entity app = RetrieveRecord("ss_application", "ss_name", "CSV Import", ["ss_name", "ss_applicationtype", "createdon"]);
+            //UpdateApplication(app, "CSV Update", "Cliff Didcock", "Mail Forwarding");
 
-            // ImportCSVData(filePath);
+            ImportCSVData(filePath, entityName, fieldLabels);
             // CreateApplication("c test", "Cliff Didcock", "Package Submission");
-            // RetrieveApplication();
+            // RetrieveRecord();
             // RetrieveMultipleApplications();
             // UpdateApplication();
             Console.Read();
         }
 
-        public static void ImportCSVData(string filePath)
+        public static void setDataType(string value)
+        {
+            
+        }
+        public static void ImportCSVData(string filePath, string entityName, string[] fieldLabels)
         {
             try
             {
                 string csvData = File.ReadAllText(filePath);
                 var file = csvData.Split('\n');
 
-                //int app = 0;
-                //int veh = 0;
-                //int cont = 0;
-
+                //Starts reading where data starts on row 2 
                 for (int row = 1; row <= file.Length - 1; row++)
                 {
                     Console.WriteLine(file.Length);
                     var record = file[row].Replace('\r', ' ').Split(',');
 
-                    var keyValues = new Dictionary<String, String>()
+                    var keyValues = new Dictionary<string, string>();
+                    for (int i = 0; i < fieldLabels.Length; i++)
                     {
-                        {String appName: record[0]},
-
+                        keyValues.Add(fieldLabels[i], record[i]);
                     }
-                    keyValues.Add()
-                    string appName = record[0];
-                    string appCustomer = record[1];
-                    string appType = record[2];
-                    string appDate = record[3];
-
-                    Console.WriteLine(appName + ", " + appCustomer + ", " + appType + ", " + appDate);
-                    CreateApplication(appName, appCustomer, appType);
+                    CreateApplication(entityName, keyValues);
                 }
             }
             catch (Exception e)
@@ -95,12 +91,36 @@ namespace USPSCrud
             }
             return new OptionSetValue(appTypeValue);
         }
-        public static void CreateApplication(string appName, string appCustomer, string appTypeLabel)
+        public static void CreateApplication(string entityName, Dictionary<string, string> keyValues)
         {
-            Entity eApplication = new Entity("ss_application");
-            eApplication.Attributes["ss_name"] = appName;
-            //eApplication.Attributes["ss_customer"] = appCustomer;
-            eApplication.Attributes["ss_applicationtype"] = GetAppTypeValue(appTypeLabel);
+            Entity eApplication = new Entity(entityName);
+
+            foreach (KeyValuePair<string, string> record in keyValues)
+            {
+                if (record.Key.Equals("ss_name"))
+                {
+                    string typeValue = record.Value;
+                    eApplication.Attributes[record.Key] = typeValue;
+                }
+                else if (record.Key.Equals("ss_applicationtype"))
+                {
+                    OptionSetValue typeValue = GetAppTypeValue(record.Value);
+                    eApplication.Attributes[record.Key] = typeValue;
+                } else if (record.Key.Equals("ss_destinationaddress"))
+                {
+                    Entity contact = RetrieveRecord("ss_customaddress", "ss_name", record.Value, new string[] {"ss_customaddressid"});
+                    Console.WriteLine(contact.Attributes["ss_customaddressid"]);
+
+                    Guid id = contact.Id;
+                    Console.WriteLine(id);
+                    EntityReference typeValue = new EntityReference ("ss_customaddress", id);
+                    eApplication.Attributes[record.Key] = typeValue;
+                } else
+                {
+                    string typeValue = record.Value;
+                    eApplication.Attributes[record.Key] = typeValue;
+                }
+            }
 
             svc.Create(eApplication);
         }
@@ -127,7 +147,7 @@ namespace USPSCrud
 
             return query;
         }
-        public static Entity RetrieveApplication(string entityName, string keyField, string keyValue, string[] columns)
+        public static Entity RetrieveRecord(string entityName, string keyField, string keyValue, string[] columns)
         {
             ConditionExpression condition1 = new ConditionExpression
             {
@@ -149,7 +169,7 @@ namespace USPSCrud
             if (result1.Entities.Count > 0)
             {
                 var record = result1.Entities[0];
-                Console.WriteLine("Name: " + record.Attributes["ss_name"] + " App Type: " + record.FormattedValues["ss_applicationtype"].ToString());
+                //Console.WriteLine("Name: " + record.Attributes["ss_name"] + " App Type: " + record.FormattedValues["ss_applicationtype"].ToString());
                 return record;
             }
 
