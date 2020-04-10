@@ -11,7 +11,8 @@
         "ss_packageweight",
         "ss_packagevolume",
         "ss_shippingspeed",
-        "ss_estimateddeliverydate"];
+        "ss_estimateddeliverydate"
+    ];
 
     function displayFields(field, boolean) {
         formContext.getControl(field).setVisible(boolean);
